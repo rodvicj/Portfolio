@@ -1,5 +1,5 @@
 {
-	"name": "minor-magnitude",
+	"name": "tutorial",
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
@@ -10,6 +10,6 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^2.0.8"
+		"astro": "^2.0.10"
 	}
 }
