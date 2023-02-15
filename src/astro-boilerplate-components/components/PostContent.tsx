@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-
 import type { IFrontmatter } from '../types/IFrontMatter';
 
 type IPostContentProps = {
