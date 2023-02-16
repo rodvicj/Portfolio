@@ -3,7 +3,7 @@ import {
   HeroAvatar,
   HeroSocial,
   Section,
-} from 'astro-boilerplate-components';
+} from '@/astro-boilerplate-components/index';
 
 const Hero = () => (
   <Section>

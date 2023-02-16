@@ -2,7 +2,7 @@ import {
   GradientText,
   Newsletter,
   Section,
-} from 'astro-boilerplate-components';
+} from '@/astro-boilerplate-components/index';
 
 const CTA = () => (
   <Section>

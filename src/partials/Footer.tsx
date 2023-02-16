@@ -1,4 +1,4 @@
-import { FooterCopyright, Section } from 'astro-boilerplate-components';
+import { FooterCopyright, Section } from '@/astro-boilerplate-components/index';
 
 import { AppConfig } from '@/utils/AppConfig';
 
