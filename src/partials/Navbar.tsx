@@ -31,11 +31,11 @@ const Navbar = () => (
           name="Ixartz's Blog"
         />
       </a>
-
       <NavMenu>
         <NavMenuItem href="/posts">Blogs</NavMenuItem>
         <NavMenuItem href="/">GitHub</NavMenuItem>
-        <NavMenuItem href="/">Twitter</NavMenuItem>
+        <NavMenuItem href="/about">About</NavMenuItem>
+        <NavMenuItem href="/posts/post-1">post-1</NavMenuItem>
       </NavMenu>
     </NavbarTwoColumns>
   </Section>
