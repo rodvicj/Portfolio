@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 import type { IFrontmatter } from '../types/IFrontMatter';
 
 type IBlogCardProps = {
-  instance: MarkdownInstance<IFrontmatter>;
+  instance: <IFrontmatter>;
 };
 
 const BlogCard = (props: IBlogCardProps) => (
