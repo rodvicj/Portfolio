@@ -1,14 +1,12 @@
 import type { ReactNode } from 'react';
 
 type IProjectProps = {
-  img: {
-    src: string;
-    alt: string;
-  };
   name: string;
   description: string;
   link: string;
   category: ReactNode;
+  imgSrc: string;
+  imgAlt: string;
 };
 
 const Project = (props: IProjectProps) => (
@@ -17,8 +15,8 @@ const Project = (props: IProjectProps) => (
       <a href={props.link}>
         <img
           className="h-36 w-36 hover:translate-y-1"
-          src={props.img.src}
-          alt={props.img.alt}
+          src={props.imgSrc}
+          alt={props.imgAlt}
           loading="lazy"
         />
       </a>
