@@ -1,15 +1,6 @@
 ---
-import type {
-  FrontmatterPage,
-  IFrontmatter,
-} from "@/astro-boilerplate-components/index";
-import {
-  BlogGallery,
-  NewerOlderPagination,
-  PaginationHeader,
-  Section,
-} from "@/astro-boilerplate-components/index";
-
+import type { FrontmatterPage, IFrontmatter, } from "@/astro-boilerplate-components/index";
+import { BlogGallery, NewerOlderPagination, PaginationHeader, Section, } from "@/astro-boilerplate-components/index";
 import { CTA } from "@/partials/CTA";
 import Base from "@/templates/Base.astro";
 import { AppConfig } from "@/utils/AppConfig";
@@ -40,6 +31,7 @@ const description =
 ---
 
 <Base head={{ title, description }}>
+  {console.log("page", page)}
   <Section>
     <PaginationHeader
       title="Random title here"

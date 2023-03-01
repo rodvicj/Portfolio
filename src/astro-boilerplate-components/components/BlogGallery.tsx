@@ -1,7 +1,7 @@
-import type { MarkdownInstance } from 'astro';
+import type { MarkdownInstance } from "astro";
 
-import type { IFrontmatter } from '../types/IFrontMatter';
-import { BlogCard } from './BlogCard';
+import type { IFrontmatter } from "../types/IFrontMatter";
+import { BlogCard } from "./BlogCard";
 
 type IRecentPostsProps = {
   postList: MarkdownInstance<IFrontmatter>[];
@@ -16,3 +16,16 @@ const BlogGallery = (props: IRecentPostsProps) => (
 );
 
 export { BlogGallery };
+
+// instance of elt {                                                                                                                                                                                │
+//     │  frontmatter: [Getter],                                                                                                                                                                         │
+//     │  file: [Getter],                                                                                                                                                                                │
+//     │  url: [Getter],                                                                                                                                                                                 │
+//     │  rawContent: [Getter],                                                                                                                                                                          │
+//     │  compiledContent: [Getter],                                                                                                                                                                     │
+//     │  '$$loadMetadata': [Getter],                                                                                                                                                                    │
+//     │  Content: [Getter],                                                                                                                                                                             │
+//     │  getHeaders: [Getter],                                                                                                                                                                          │
+//     │  default: [AsyncFunction: load],                                                                                                                                                                │
+//     │  [Symbol(Symbol.toStringTag)]: 'Module'                                                                                                                                                         │
+//     │}

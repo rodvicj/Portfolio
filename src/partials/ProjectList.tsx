@@ -69,3 +69,12 @@ const ProjectList = () => (
 );
 
 export { ProjectList };
+
+// type IProjectProps = {
+//   name: string;
+//   description: string;
+//   link: string;
+//   category: ReactNode;
+//   imgSrc: string;
+//   imgAlt: string;
+// };
