@@ -1,19 +1,35 @@
 import type { MarkdownInstance } from 'astro';
 
-import type { IFrontmatter } from '../types/IFrontMatter';
-import { BlogCard } from './BlogCard';
+import type { IFrontmatterProject } from '../types/IFrontMatter';
+import { Project } from './Project';
 
-type IRecentPostsProps = {
-  postList: MarkdownInstance<IFrontmatter>[];
+type IRecentProjectsProps = {
+  projectList: MarkdownInstance<IFrontmatterProject>[];
 };
 
 // TODO: Make it accomodate Projects
-const BlogGallery = (props: IRecentPostsProps) => (
-  <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-    {props.postList.map((elt) => (
-      <BlogCard key={elt.url} instance={elt} />
-    ))}
-  </div>
+const ProjectGallery = (props: IRecentProjectsProps) => (
+    <div className="flex flex-col gap-6">
+      {props.projectList.map((project) => (
+      <Project key={project.url} instance={project} />
+      ))}
+    </div>
 );
 
-export { BlogGallery };
+export { ProjectGallery };
+
+
+      // <Project
+      //   name={props.projectList.name}
+      //   description={props.projectList.description}
+      //   link="/"
+      //   imgsrc={props.projectList.imgSrc}
+      //   imgalt={props.projectList.imgAlt}
+      //   category={
+      //     <>
+      //   {props.projectList.tags.map((tag: string) => {
+      //       <Tags color={ColorTags.FUCHSIA}>{tag}</Tags>
+      //   })}
+      //     </>
+      //   }
+      // />

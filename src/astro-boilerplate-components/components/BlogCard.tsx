@@ -9,7 +9,7 @@ type IBlogCardProps = {
 
 const BlogCard = (props: IBlogCardProps) => (
   <>
-    {console.log("Ifrontmatter: ", props.instance.frontmatter)}
+    {/* {console.log("Ifrontmatter: ", props.instance.frontmatter)} */}
     <a className="hover:translate-y-1" href={props.instance.url}>
       <div className="overflow-hidden rounded-md bg-slate-800">
         <div className="aspect-w-3 aspect-h-2">
@@ -32,7 +32,6 @@ const BlogCard = (props: IBlogCardProps) => (
               "LLL d, yyyy"
             )}
           </div>
-
           <div className="mt-2 text-sm">
             {props.instance.frontmatter.description}
           </div>

@@ -6,6 +6,15 @@ export interface IFrontmatter {
   imgAlt: string;
 }
 
+export interface IFrontmatterProject {
+  name: string;
+  description: string;
+  imgSrc: string;
+  imgAlt: string;
+  pubDate: string;
+  tags: string[];
+}
+
 // Workaround to import Astro type. Otherwise, it'll have some compilation errors
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 export type Page<T> = import('astro').Page<T>;

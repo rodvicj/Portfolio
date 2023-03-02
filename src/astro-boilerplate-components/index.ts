@@ -16,16 +16,13 @@ import { PostHeader } from './components/PostHeader';
 import { Project } from './components/Project';
 import { Section } from './components/Section';
 import { ColorTags, Tags } from './components/Tags';
-import type {
-  FrontmatterPage,
-  IFrontmatter,
-  MarkdownInstance,
-  Page,
-} from './types/IFrontMatter';
+import { Technology } from './components/Technology';
+import type { FrontmatterPage, IFrontmatter, IFrontmatterProject, MarkdownInstance, Page, } from './types/IFrontMatter';
 
 export {
   type FrontmatterPage,
   type IFrontmatter,
+  type IFrontmatterProject,
   type MarkdownInstance,
   type Page,
   BlogCard,
@@ -47,4 +44,5 @@ export {
   Project,
   Section,
   Tags,
+  Technology,
 };
