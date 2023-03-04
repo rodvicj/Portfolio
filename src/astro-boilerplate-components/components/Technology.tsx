@@ -8,14 +8,9 @@ type TechStackProps = {
 console.log("tag.lower()", "TAG".toLowerCase());
 const Technology = (props: TechStackProps) => (
   <>
-    {props.tags.map((tag): ReactNode => {
-      return (
-        <>
-      <Tags color={ColorTags[tag.toUpperCase()]}>{tag}</Tags>
-      {console.log("colorsags[tag]", ColorTags[tag.toUpperCase()])}
-      </>
-      )
-    })}
+    {props.tags.map((tag): ReactNode => (
+      <Tags color={ColorTags[tag]}>{tag}</Tags>
+    ))}
   </>
 );
 
