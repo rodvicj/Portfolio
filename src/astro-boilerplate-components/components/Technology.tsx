@@ -8,9 +8,7 @@ type TechStackProps = {
 const Technology = (props: TechStackProps) => (
   <>
     {props.tags.map((tag): ReactNode => (
-      {tag === undefined ??
-      <Tags color={ColorTags[tag]}>{tag}</Tags>
-        }
+      <Tags color={ColorTags[tag] ?? ColorTags["SLATE"]}>{tag}</Tags>
     ))}
   </>
 );
