@@ -5,11 +5,12 @@ type TechStackProps = {
   tags: string[];
 };
 
-console.log("tag.lower()", "TAG".toLowerCase());
 const Technology = (props: TechStackProps) => (
   <>
     {props.tags.map((tag): ReactNode => (
+      {tag === undefined ??
       <Tags color={ColorTags[tag]}>{tag}</Tags>
+        }
     ))}
   </>
 );

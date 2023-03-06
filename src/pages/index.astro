@@ -10,8 +10,6 @@ import { sortByDate } from "@/utils/Posts";
 
 const allPosts = await Astro.glob<IFrontmatter>("./posts/*.md");
 const allProjects = await Astro.glob<IFrontmatterProject>("./projects/*.md");
-console.log("allProjects", allProjects[0]?.frontmatter);
-console.log("ProjectUrl", allProjects[0]?.url);
 const sortedPosts = sortByDate(allPosts);
 const lastThreePosts = sortedPosts.slice(0, 3);
 

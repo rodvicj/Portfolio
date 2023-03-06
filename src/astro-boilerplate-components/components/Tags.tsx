@@ -2,7 +2,35 @@ import type { ReactNode } from "react";
 
 import type { Values } from "../types/TypeUnion";
 
-export const ColorTags = {
+
+type IColorTags = {
+  [key: string]: string;
+  SLATE: string,
+  GRAY: string,
+  ZINC: string,
+  NEUTRAL: string,
+  STONE: string,
+  RED: string,
+  ORANGE: string,
+  AMBER: string,
+  YELLOW: string,
+  LIME: string,
+  GREEN: string,
+  EMERALD: string,
+  TEAL: string,
+  TAILWINDCSS: string,
+  SKY: string,
+  TYPESCRIPT: string,
+  ASTROJS: string,
+  VIOLET: string,
+  PURPLE: string,
+  FUCHSIA: string,
+  PINK: string,
+  ROSE: string,
+};
+
+
+export const ColorTags: IColorTags = {
   SLATE: "SLATE",
   GRAY: "GRAY",
   ZINC: "ZINC",

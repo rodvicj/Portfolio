@@ -1,10 +1,10 @@
 ---
-name: Typography example
+title: Typography example
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi.
 layout: '@/templates/BaseProject.astro'
+pubDate: 2020-02-06T00:00:00Z
 imgSrc: '/assets/images/image-post.jpeg'
 imgAlt: 'Image post'
-pubDate: 2020-02-06T00:00:00Z
 tags: ["Astrojs", "Tailwindcss", "TypeScript" ]
 ---
 
