@@ -7,9 +7,12 @@ type TechStackProps = {
 
 const Technology = (props: TechStackProps) => (
   <>
-    {props.tags.map((tag): ReactNode => (
-      <Tags color={ColorTags[tag] ?? ColorTags["SLATE"]}>{tag}</Tags>
-    ))}
+    {props.tags.map((tag: string): ReactNode => (
+        <Tags key={tag} color={ColorTags[tag.toUpperCase()] ?? ColorTags["SLATE"]}>
+          {tag}
+        </Tags>
+      )
+    )}
   </>
 );
 
