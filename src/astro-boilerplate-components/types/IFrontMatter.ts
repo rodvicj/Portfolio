@@ -7,11 +7,11 @@ export interface IFrontmatter {
 }
 
 export interface IFrontmatterProject {
-  name: string;
+  title: string;
   description: string;
+  pubDate: string;
   imgSrc: string;
   imgAlt: string;
-  pubDate: string;
   tags: string[];
 }
 

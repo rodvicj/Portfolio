@@ -1,11 +1,14 @@
-import { GradientText, Project, Section } from '@/astro-boilerplate-components/index';
-import type { MarkdownInstance } from 'astro';
-import type { IFrontmatterProject } from '@/astro-boilerplate-components/index';
+import {
+  GradientText,
+  Project,
+  Section,
+} from "@/astro-boilerplate-components/index";
+import type { MarkdownInstance } from "astro";
+import type { IFrontmatterProject } from "@/astro-boilerplate-components/index";
 
 type IRecentProjectsProps = {
   projectList: MarkdownInstance<IFrontmatterProject>[];
 };
-
 
 // type IProjectProps = {
 //   name: string;
@@ -24,9 +27,11 @@ const ProjectList = (props: IRecentProjectsProps) => (
       </>
     }
   >
-    {props.projectList.map((project) => (
-      <Project key={project.url} instance={project} />
-    ))}
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-1">
+      {props.projectList.map((project) => (
+        <Project key={project.url} instance={project} />
+      ))}
+    </div>
   </Section>
 );
 

@@ -35,7 +35,7 @@ const Project = (props: IProjectProps) => (
       <div className="flex flex-col items-center gap-y-2 md:flex-row">
         <a className="hover:text-cyan-400" href={props.instance.url}>
           <div className="text-xl font-semibold">
-            {props.instance.frontmatter.name}
+            {props.instance.frontmatter.title}
           </div>
         </a>
         <div className="ml-3 flex flex-wrap gap-2">

@@ -1,5 +1,4 @@
 import { ColorTags, Tags } from "@/astro-boilerplate-components/index";
-import { ReactNode } from "react";
 
 type TechStackProps = {
   tags: string[];
@@ -7,7 +6,7 @@ type TechStackProps = {
 
 const Technology = (props: TechStackProps) => (
   <>
-    {props.tags.map((tag: string): ReactNode => (
+    {props.tags.map((tag: string) => (
         <Tags key={tag} color={ColorTags[tag.toUpperCase()] ?? ColorTags["SLATE"]}>
           {tag}
         </Tags>
