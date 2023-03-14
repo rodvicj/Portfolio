@@ -1,17 +1,6 @@
-// import type { ReactNode } from 'react';
-
-// type IProjectProps = {
-//   name: string;
-//   description: string;
-//   link: string;
-//   category: ReactNode;
-//   imgSrc: string;
-//   imgAlt: string;
-// };
-
 import { format } from "date-fns";
 import type { MarkdownInstance } from "astro";
-import type { IFrontmatterProject } from "../types/IFrontMatter";
+import type { IFrontmatterProject as IFrontmatterProject } from "../types/IFrontMatter";
 import { Technology } from "./Technology";
 
 type IProjectProps = {

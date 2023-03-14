@@ -21,8 +21,8 @@ import type { FrontmatterPage, IFrontmatter, IFrontmatterProject, MarkdownInstan
 
 export {
   type FrontmatterPage,
-  type IFrontmatter,
-  type IFrontmatterProject,
+  type IFrontmatter as IFrontmatter,
+  type IFrontmatterProject as IFrontmatterProject,
   type MarkdownInstance,
   type Page,
   BlogCard,

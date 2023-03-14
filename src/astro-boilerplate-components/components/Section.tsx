@@ -1,9 +1,9 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
-type ISectionProps = {
+interface ISectionProps {
   title?: ReactNode;
   children: ReactNode;
-};
+}
 
 const Section = (props: ISectionProps) => (
   <div className="mx-auto max-w-screen-lg px-3 py-6">
