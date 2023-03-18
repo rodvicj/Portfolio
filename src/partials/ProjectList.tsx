@@ -1,8 +1,4 @@
-import {
-  GradientText,
-  Project,
-  Section,
-} from "@/astro-boilerplate-components/index";
+import { GradientText, Project, Section, } from "@/astro-boilerplate-components/index";
 import type { MarkdownInstance } from "astro";
 import type { IFrontmatterProject } from "@/astro-boilerplate-components/index";
 
