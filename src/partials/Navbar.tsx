@@ -29,19 +29,19 @@ const Navbar = () => {
 
         <ul
           // className={`text-gray-200 flex flex-col md:items-center m-auto absolute md:static z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-          className={`text-gray-200 md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto  left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:transition-none md:bg-slate-900 transition-{text-gray-200 md:flex md:items-center md:pb-0 pt-12 absolute md:static md:z-auto  left-0 w-full md:w-auto md:pl-0 pl-16 duration-500 ease-in}  ${
             // open ? "top-20 bg-slate-900" : "top-[-490px]"
             open ? "bg-slate-800 top-0" : "top-[-490px]"
           }`}
         >
           <li
             onClick={() => setOpen(!open)}
-            className="text-3xl absolute right-9 md:hidden cursor-pointer text-gray-200 px-3 py-6"
+            className="text-3xl absolute right-9 md:hidden cursor-pointer text-gray-200"
           >
             {open ? <FontAwesomeIcon icon={faXmark} /> : <></>}
           </li>
           {Header.map((header) => (
-            <li key={header.name} className="md:ml-8 text-xl md:my-0 my-5">
+            <li key={header.name} className=" md:ml-8 text-xl md:my-0 my-5">
               {header.name === "Github" ? (
                 <a
                   href={header.link}
@@ -88,3 +88,4 @@ export { Navbar };
 // ) : (
 //   <></>
 // )}
+//DeprecationWarning: Invalid 'main' field in '/home/xusr/Documents/Portfolio/node_modules/react-icons/package.json' of 'lib'.
