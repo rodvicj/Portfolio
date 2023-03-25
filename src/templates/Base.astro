@@ -26,19 +26,17 @@ const {
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    >
-
-    </script>
+    ></script>
     <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" /> -->
 
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body class="bg-slate-900 text-gray-100">
-    <!-- <Navbar client:load /> -->
-    <Navbar client:visible />
+    <Navbar client:only="react" />
+    <!-- <Navbar client:visible /> -->
     <!-- <Navbar /> -->
-    <slot></slot>
+    <slot />
     <Footer />
   </body>
 </html>
