@@ -4,21 +4,6 @@ type TechStackProps = {
   tags: string[];
 };
 
-// const Technology = (props: TechStackProps) => (
-//   <>
-//     {props.tags.map(
-//       (tag: string) =>
-//         (
-//           <Tags key={tag} color={`${ColorTags[tag.toUpperCase()]}`}>
-//             {tag}
-//           </Tags>
-//         ) ?? <></>
-//     )}
-//   </>
-// );
-
-// export { Technology };
-
 const Technology = (props: TechStackProps) => {
   //   return (
   //     <div>
@@ -41,3 +26,18 @@ const Technology = (props: TechStackProps) => {
 };
 
 export { Technology };
+
+// const Technology = (props: TechStackProps) => (
+//   <>
+//     {props.tags.map(
+//       (tag: string) =>
+//         (
+//           <Tags key={tag} color={`${ColorTags[tag.toUpperCase()]}`}>
+//             {tag}
+//           </Tags>
+//         ) ?? <></>
+//     )}
+//   </>
+// );
+
+// export { Technology };
