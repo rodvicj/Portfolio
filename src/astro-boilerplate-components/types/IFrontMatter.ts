@@ -4,6 +4,7 @@ export interface IFrontmatter {
   pubDate: string;
   imgSrc: string;
   imgAlt: string;
+  tags: string[];
 }
 
 export interface IFrontmatterProject {

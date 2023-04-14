@@ -1,5 +1,6 @@
 import type { MarkdownInstance } from "astro";
 import { format } from "date-fns";
+import { Technology } from "./Technology";
 
 import type { IFrontmatter } from "../types/IFrontMatter";
 
@@ -35,6 +36,13 @@ const BlogCard = (props: IBlogCardProps) => (
             {props.instance.frontmatter.description}
           </div>
         </div>
+
+
+      <div className="ml-3 flex flex-wrap gap-2 px-3 pt-4 pb-6">
+        <Technology tags={props.instance.frontmatter.tags} />
+      </div>
+
+
       </div>
     </a>
   </>
