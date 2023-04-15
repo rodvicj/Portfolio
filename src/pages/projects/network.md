@@ -5,7 +5,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ve
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post 2'
-tags: ["Astrojs", "Tailwindcss", "TypeScript" ]
+tags: ["Javascript", "Bootstrap", "CSS", "Python", "Django", "Reactjs" ]
 ---
 
 [Network](#network)
@@ -20,10 +20,10 @@ Design a Twitter-like social network website for making posts and following user
 [Getting Started](#getting-started)
 -----------------------------------
 
-1.  Download the distribution code from [https://cdn.cs50.net/web/2020/spring/projects/4/network.zip](https://cdn.cs50.net/web/2020/spring/projects/4/network.zip) and unzip it.
-2.  In your terminal, `cd` into the `project4` directory.
-3.  Run `python manage.py makemigrations network` to make migrations for the `network` app.
-4.  Run `python manage.py migrate` to apply migrations to your database.
+1. Download the distribution code from [https://cdn.cs50.net/web/2020/spring/projects/4/network.zip](https://cdn.cs50.net/web/2020/spring/projects/4/network.zip) and unzip it.
+2. In your terminal, `cd` into the `project4` directory.
+3. Run `python manage.py makemigrations network` to make migrations for the `network` app.
+4. Run `python manage.py migrate` to apply migrations to your database.
 
 [Understanding](#understanding)
 -------------------------------
@@ -43,52 +43,51 @@ Finally, take a look at `network/models.py`. This is where you will define any m
 
 Using Python, JavaScript, HTML, and CSS, complete the implementation of a social network that allows users to make posts, follow other users, and “like” posts. You must fulfill the following requirements:
 
-*   **New Post**: Users who are signed in should be able to write a new text-based post by filling in text into a text area and then clicking a button to submit the post.
-    *   The screenshot at the top of this specification shows the “New Post” box at the top of the “All Posts” page. You may choose to do this as well, or you may make the “New Post” feature a separate page.
-*   **All Posts**: The “All Posts” link in the navigation bar should take the user to a page where they can see all posts from all users, with the most recent posts first.
-    *   Each post should include the username of the poster, the post content itself, the date and time at which the post was made, and the number of “likes” the post has (this will be 0 for all posts until you implement the ability to “like” a post later).
-*   **Profile Page**: Clicking on a username should load that user’s profile page. This page should:
-    *   Display the number of followers the user has, as well as the number of people that the user follows.
-    *   Display all of the posts for that user, in reverse chronological order.
-    *   For any other user who is signed in, this page should also display a “Follow” or “Unfollow” button that will let the current user toggle whether or not they are following this user’s posts. Note that this only applies to any “other” user: a user should not be able to follow themselves.
-*   **Following**: The “Following” link in the navigation bar should take the user to a page where they see all posts made by users that the current user follows.
-    *   This page should behave just as the “All Posts” page does, just with a more limited set of posts.
-    *   This page should only be available to users who are signed in.
-*   **Pagination**: On any page that displays posts, posts should only be displayed 10 on a page. If there are more than ten posts, a “Next” button should appear to take the user to the next page of posts (which should be older than the current page of posts). If not on the first page, a “Previous” button should appear to take the user to the previous page of posts as well.
-    *   See the **Hints** section for some suggestions on how to implement this.
-*   **Edit Post**: Users should be able to click an “Edit” button or link on any of their own posts to edit that post.
-    *   When a user clicks “Edit” for one of their own posts, the content of their post should be replaced with a `textarea` where the user can edit the content of their post.
-    *   The user should then be able to “Save” the edited post. Using JavaScript, you should be able to achieve this without requiring a reload of the entire page.
-    *   For security, ensure that your application is designed such that it is not possible for a user, via any route, to edit another user’s posts.
-*   **“Like” and “Unlike”**: Users should be able to click a button or link on any post to toggle whether or not they “like” that post.
-    *   Using JavaScript, you should asynchronously let the server know to update the like count (as via a call to `fetch`) and then update the post’s like count displayed on the page, without requiring a reload of the entire page.
+* **New Post**: Users who are signed in should be able to write a new text-based post by filling in text into a text area and then clicking a button to submit the post.
+  * The screenshot at the top of this specification shows the “New Post” box at the top of the “All Posts” page. You may choose to do this as well, or you may make the “New Post” feature a separate page.
+* **All Posts**: The “All Posts” link in the navigation bar should take the user to a page where they can see all posts from all users, with the most recent posts first.
+  * Each post should include the username of the poster, the post content itself, the date and time at which the post was made, and the number of “likes” the post has (this will be 0 for all posts until you implement the ability to “like” a post later).
+* **Profile Page**: Clicking on a username should load that user’s profile page. This page should:
+  * Display the number of followers the user has, as well as the number of people that the user follows.
+  * Display all of the posts for that user, in reverse chronological order.
+  * For any other user who is signed in, this page should also display a “Follow” or “Unfollow” button that will let the current user toggle whether or not they are following this user’s posts. Note that this only applies to any “other” user: a user should not be able to follow themselves.
+* **Following**: The “Following” link in the navigation bar should take the user to a page where they see all posts made by users that the current user follows.
+  * This page should behave just as the “All Posts” page does, just with a more limited set of posts.
+  * This page should only be available to users who are signed in.
+* **Pagination**: On any page that displays posts, posts should only be displayed 10 on a page. If there are more than ten posts, a “Next” button should appear to take the user to the next page of posts (which should be older than the current page of posts). If not on the first page, a “Previous” button should appear to take the user to the previous page of posts as well.
+  * See the **Hints** section for some suggestions on how to implement this.
+* **Edit Post**: Users should be able to click an “Edit” button or link on any of their own posts to edit that post.
+  * When a user clicks “Edit” for one of their own posts, the content of their post should be replaced with a `textarea` where the user can edit the content of their post.
+  * The user should then be able to “Save” the edited post. Using JavaScript, you should be able to achieve this without requiring a reload of the entire page.
+  * For security, ensure that your application is designed such that it is not possible for a user, via any route, to edit another user’s posts.
+* **“Like” and “Unlike”**: Users should be able to click a button or link on any post to toggle whether or not they “like” that post.
+  * Using JavaScript, you should asynchronously let the server know to update the like count (as via a call to `fetch`) and then update the post’s like count displayed on the page, without requiring a reload of the entire page.
 
 [Hints](#hints)
 ---------------
 
-*   For examples of JavaScript `fetch` calls, you may find some of the routes in Project 3 useful to reference.
-*   You’ll likely need to create one or more models in `network/models.py` and/or modify the existing `User` model to store the necessary data for your web application.
-*   Django’s [Paginator](https://docs.djangoproject.com/en/4.0/topics/pagination/) class may be helpful for implementing pagination on the back-end (in your Python code).
-*   Bootstrap’s [Pagination](https://getbootstrap.com/docs/4.4/components/pagination/) features may be helpful for displaying pages on the front-end (in your HTML).
+* For examples of JavaScript `fetch` calls, you may find some of the routes in Project 3 useful to reference.
+* You’ll likely need to create one or more models in `network/models.py` and/or modify the existing `User` model to store the necessary data for your web application.
+* Django’s [Paginator](https://docs.djangoproject.com/en/4.0/topics/pagination/) class may be helpful for implementing pagination on the back-end (in your Python code).
+* Bootstrap’s [Pagination](https://getbootstrap.com/docs/4.4/components/pagination/) features may be helpful for displaying pages on the front-end (in your HTML).
 
 [How to Submit](#how-to-submit)
 -------------------------------
 
-1.  Visit [this link](https://submit.cs50.io/invites/89679428401548238ceb022f141b9947), log in with your GitHub account, and click **Authorize cs50**. Then, check the box indicating that you’d like to grant course staff access to your submissions, and click **Join course**.
-2.  [Install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
+1. Visit [this link](https://submit.cs50.io/invites/89679428401548238ceb022f141b9947), log in with your GitHub account, and click **Authorize cs50**. Then, check the box indicating that you’d like to grant course staff access to your submissions, and click **Join course**.
+2. [Install Git](https://git-scm.com/downloads) and, optionally, [install `submit50`](https://cs50.readthedocs.io/submit50/).
 
 When you submit your project, the contents of your `web50/projects/2020/x/network` branch should match the file structure of the unzipped distribution code as originally received. That is to say, your files should not be nested inside of any other directories of your own creation. Your branch should also not contain any code from any other projects, only this one. Failure to adhere to this file structure will likely result in your submission being rejected.
 
 By way of example, for this project that means that if the grading staff visits `https://github.com/me50/USERNAME/tree/web50/projects/2020/x/network` (where `USERNAME` is your own GitHub username as provided in the form, below) we should see the two subdirectories (`network`, `project4`) and the `manage.py` file. If that’s not how your code is organized when you check, reorganize your repository needed to match this paradigm.
 
-3.  If you’ve installed `submit50`, execute
-    
+3. If you’ve installed `submit50`, execute
+
         submit50 web50/projects/2020/x/network
-        
-    
+
     Otherwise, using Git, push your work to `https://github.com/me50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `web50/projects/2020/x/network`.
-    
-4.  [Record a screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) not to exceed 5 minutes in length (and not uploaded more than one month prior to your submission of this project), in which you demonstrate your project’s functionality. Be certain that every element of the specification, above, is demonstrated in your video. There’s no need to show your code in this video, just your application in action; we’ll review your code on GitHub. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else. In your video’s description, you must timestamp where your video demonstrates each of the seven (7) elements of the specification. **This is not optional**, videos without timestamps in their description will be automatically rejected.
-5.  Submit [this form](https://forms.cs50.io/674c7dbb-096d-4343-afe8-ea0d53cecda4).
+
+4. [Record a screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen/) not to exceed 5 minutes in length (and not uploaded more than one month prior to your submission of this project), in which you demonstrate your project’s functionality. Be certain that every element of the specification, above, is demonstrated in your video. There’s no need to show your code in this video, just your application in action; we’ll review your code on GitHub. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else. In your video’s description, you must timestamp where your video demonstrates each of the seven (7) elements of the specification. **This is not optional**, videos without timestamps in their description will be automatically rejected.
+5. Submit [this form](https://forms.cs50.io/674c7dbb-096d-4343-afe8-ea0d53cecda4).
 
 You can then go to [https://cs50.me/cs50w](https://cs50.me/cs50w) to view your current progress!

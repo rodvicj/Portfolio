@@ -5,7 +5,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ve
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post 2'
-tags: ["Astrojs", "Tailwindcss", "TypeScript" ]
+tags: ["Astrojs", "Tailwindcss", "TypeScript", "Reactjs" ]
 ---
 
 # CS50W Final Project
