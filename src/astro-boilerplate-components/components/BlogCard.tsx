@@ -50,6 +50,9 @@ const BlogCard = (props: IBlogCardProps) => (
 
 export { BlogCard };
 
+// TODO: Fix the inconsistent size of blogpost card container in the index page
+// NOTE: Maybe it's in the BlogGallery component
+
 // instance of elt {                                                                                                                                                                                │
 //     │  frontmatter: [Getter],                                                                                                                                                                         │
 //     │  file: [Getter],                                                                                                                                                                                │
