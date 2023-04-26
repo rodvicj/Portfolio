@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header } from "@/astro-boilerplate-components/index";
+import { GradientText, Header } from "@/astro-boilerplate-components/index";
 import {
   // NavbarTwoColumns,
   // NavMenu,
@@ -43,22 +43,26 @@ const Navbar = () => {
           {Header.map((header) => (
             <li key={header.name} className=" md:ml-8 text-xl md:my-0 my-5">
               {header.name === "Github" ? (
-                <a
-                  href={header.link}
-                  className="hover:text-white duration-500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {header.name}
-                </a>
+                <GradientText>
+                  <a
+                    href={header.link}
+                    className="hover:text-white duration-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {header.name}
+                  </a>
+                </GradientText>
               ) : (
-                <a
-                  onClick={() => setOpen(false)}
-                  href={header.link}
-                  className="hover:text-white duration-500"
-                >
-                  {header.name}
-                </a>
+                <GradientText>
+                  <a
+                    onClick={() => setOpen(false)}
+                    href={header.link}
+                    className="hover:text-white"
+                  >
+                    {header.name}
+                  </a>
+                </GradientText>
               )}
             </li>
           ))}

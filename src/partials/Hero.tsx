@@ -10,7 +10,7 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hi there, I'm <GradientText>rodvicj</GradientText> 👋
         </>
       }
       description={
@@ -67,3 +67,5 @@ const Hero = () => (
 );
 
 export { Hero };
+
+// {/* An aspiring web developer from philippines. Welcome to my CS50W final project, a portfolio website to showcase my projects and my blogposts. */}
