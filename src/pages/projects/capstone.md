@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Capstone
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi.
+description: My final project for CS50W is a website portfolio that showcase projects and also includes a blogpost.
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post 2'

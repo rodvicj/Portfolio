@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Mail
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi.
+description: Design a front-end for an email client that makes API calls to send and receive emails.
 pubDate: 2020-02-06T00:00:00Z
 imgSrc: '/assets/images/image-post.jpeg'
 imgAlt: 'Image post'

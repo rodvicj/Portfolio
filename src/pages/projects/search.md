@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Search
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi.
+description: Design a front-end for Google Search, Google Image Search, and Google Advanced Search.
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post 2'
