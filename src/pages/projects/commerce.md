@@ -15,9 +15,9 @@ CS50W does not feature a one-to-one correspondence between lectures and projects
 
 Design an eBay-like e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.”
 
-![Active listings page](../../../public/assets/images/listings.png)
+![Active listings page](../../../assets/images/listings.png)
 
-![Listing page](../../../public/assets/images/listing.png)
+![Listing page](../../../assets/images/listing.png)
 
 [Getting Started](#getting-started)
 -----------------------------------

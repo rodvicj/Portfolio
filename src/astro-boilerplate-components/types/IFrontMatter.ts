@@ -20,6 +20,6 @@ export interface IFrontmatterProject {
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 export type Page<T> = import('astro').Page<T>;
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-export type MarkdownInstance<T> = import('astro').MarkdownInstance<T>;
+// export type MarkdownInstance<T> = import('astro').MarkdownInstance<T>;
 
-export type FrontmatterPage = Page<MarkdownInstance<IFrontmatter>>;
+// export type FrontmatterPage = Page<MarkdownInstance<IFrontmatter>>;
