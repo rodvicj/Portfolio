@@ -15,7 +15,7 @@ CS50W does not feature a one-to-one correspondence between lectures and projects
 
 Design a Twitter-like social network website for making posts and following users.
 
-![Network page](../../../public/assets/images/network.png)
+![Network page](../../../assets/images/network.png)
 
 [Getting Started](#getting-started)
 -----------------------------------

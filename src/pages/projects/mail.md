@@ -15,9 +15,9 @@ CS50W does not feature a one-to-one correspondence between lectures and projects
 
 Design a front-end for an email client that makes API calls to send and receive emails.
 
-![Inbox page](../../../public/assets/images/inbox.png)
+![Inbox page](../../../assets/images/inbox.png)
 
-![Email page](../../../public/assets/images/email.png)
+![Email page](../../../assets/images/email.png)
 
 [Getting Started](#getting-started)
 -----------------------------------
