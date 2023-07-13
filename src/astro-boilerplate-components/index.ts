@@ -19,10 +19,10 @@ import { ColorTags, Tags } from "./components/Tags";
 import { Technology } from "./components/Technology";
 import { Header } from "./components/Header";
 import type {
-  FrontmatterPage,
+  // FrontmatterPage,
   IFrontmatter,
   IFrontmatterProject,
-  MarkdownInstance,
+  // MarkdownInstance,
   Page,
 } from "./types/IFrontMatter";
 
