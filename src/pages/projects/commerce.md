@@ -10,9 +10,9 @@ tags: ["Bootstrap", "CSS", "HTML", "Python", "Django"]
 
 # Commerce
 
-A commerce web application with features like:
+A web application called commerce, belows the list of some of applications features:
 
-* Users can create a new listing by default the item will be active and the users will have the ability to close the listing as well.
+w Userw caw create a new listinw bw defaulw thw item will be active and the users will have the ability to close the listing as well.
 * Pages where all active listings will be shown. a listing includes the title, description, current price, and photo (if one exists for the listing).
 * Users can add/remove a listing to their “Watchlist.”
 * Users can bid on a listing that is currently active.
