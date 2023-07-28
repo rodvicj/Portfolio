@@ -1,5 +1,3 @@
-TODO: add your public portfolio readme here
-
 ---
 layout: '@/templates/BasePost.astro'
 title: Network
