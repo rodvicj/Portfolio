@@ -3,7 +3,7 @@ import {
   HeroAvatar,
   HeroSocial,
   Section,
-} from "@/astro-boilerplate-components/index";
+} from '@/astro-boilerplate-components/index';
 
 const Hero = () => (
   <Section>
@@ -15,15 +15,15 @@ const Hero = () => (
       }
       description={
         <>
-          An aspiring{" "}
+          An aspiring{' '}
           <a className="text-cyan-400 hover:underline" href="/">
             web developer
-          </a>{" "}
-          from philippines. welcome to my{" "}
+          </a>{' '}
+          from philippines. welcome to my{' '}
           <a className="text-cyan-400 hover:underline" href="/">
             portfolio
-          </a>{" "}
-          website where I showcase my projects.{" "}
+          </a>{' '}
+          website where I showcase my projects.{' '}
         </>
       }
       avatar={

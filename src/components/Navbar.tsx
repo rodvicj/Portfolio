@@ -1,13 +1,15 @@
-import { useState } from "react";
-import { GradientText, Header } from "@/astro-boilerplate-components/index";
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+
 import {
+  GradientText,
+  Header,
   // NavbarTwoColumns,
   // NavMenu,
   // NavMenuItem,
   Section,
-} from "@/astro-boilerplate-components/index";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+} from '@/astro-boilerplate-components/index';
 // import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 // <FontAwesomeIcon icon="fa-duotone fa-xmark" />
@@ -18,10 +20,10 @@ const Navbar = () => {
 
   return (
     <Section>
-      <div className="flex items-center justify-between py-4 md:px-10 px-7">
+      <div className="flex items-center justify-between py-4 px-7 md:px-10">
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-9 top-11 md:hidden cursor-pointer text-gray-200"
+          className="absolute right-9 top-11 cursor-pointer text-3xl text-gray-200 md:hidden"
           // className="text-3xl absolute right-9 md:hidden cursor-pointer text-gray-200"
         >
           {!open ? <FontAwesomeIcon icon={faBars} /> : <></>}
@@ -29,24 +31,24 @@ const Navbar = () => {
 
         <ul
           // className={`text-gray-200 flex flex-col md:items-center m-auto absolute md:static z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-          className={`md:transition-none md:bg-slate-900 transition-{text-gray-200 md:flex md:items-center md:pb-0 pt-12 absolute md:static md:z-auto  left-0 w-full md:w-auto md:pl-0 pl-16 duration-500 ease-in}  ${
+          className={`transition-{text-gray-200 ease-in} absolute left-0 w-full pt-12 pl-16 duration-500 md:static md:z-auto  md:flex md:w-auto md:items-center md:bg-slate-900 md:pb-0 md:pl-0 md:transition-none  ${
             // open ? "top-20 bg-slate-900" : "top-[-490px]"
-            open ? "bg-slate-800 top-0" : "top-[-490px]"
+            open ? 'top-0 bg-slate-800' : 'top-[-490px]'
           }`}
         >
           <li
             onClick={() => setOpen(!open)}
-            className="text-3xl absolute right-9 md:hidden cursor-pointer text-gray-200"
+            className="absolute right-9 cursor-pointer text-3xl text-gray-200 md:hidden"
           >
             {open ? <FontAwesomeIcon icon={faXmark} /> : <></>}
           </li>
           {Header.map((header) => (
-            <li key={header.name} className=" md:ml-8 text-xl md:my-0 my-5">
-              {header.name === "Github" ? (
+            <li key={header.name} className=" my-5 text-xl md:my-0 md:ml-8">
+              {header.name === 'Github' ? (
                 <GradientText>
                   <a
                     href={header.link}
-                    className="hover:text-white duration-500"
+                    className="duration-500 hover:text-white"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -92,4 +94,4 @@ export { Navbar };
 // ) : (
 //   <></>
 // )}
-//DeprecationWarning: Invalid 'main' field in '/home/xusr/Documents/Portfolio/node_modules/react-icons/package.json' of 'lib'.
+// DeprecationWarning: Invalid 'main' field in '/home/xusr/Documents/Portfolio/node_modules/react-icons/package.json' of 'lib'.
