@@ -16,7 +16,7 @@ const Hero = () => (
       description={
         <>
           A <a className="hover:none text-cyan-400">web developer</a> from
-          philippines, welcome to my{' '}
+          Philippines, welcome to my{' '}
           <a className="hover:none text-cyan-400">portfolio</a> website, the
           place where I showcase some of my projects.{' '}
         </>
