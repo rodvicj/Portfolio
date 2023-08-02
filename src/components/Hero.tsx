@@ -10,20 +10,15 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>rodvicj</GradientText> 👋
+          Hi there, I'm <GradientText>Rodvicj</GradientText> 👋
         </>
       }
       description={
         <>
-          An aspiring{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            web developer
-          </a>{' '}
-          from philippines. welcome to my{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            portfolio
-          </a>{' '}
-          website where I showcase my projects.{' '}
+          A <a className="hover:none text-cyan-400">web developer</a> from
+          philippines, welcome to my{' '}
+          <a className="hover:none text-cyan-400">portfolio</a> website, the
+          place where I showcase some of my projects.{' '}
         </>
       }
       avatar={
@@ -36,28 +31,14 @@ const Hero = () => (
       }
       socialButtons={
         <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
+          <a
+            href="https://www.linkedin.com/in/rodvicj/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <HeroSocial
               src="/assets/images/linkedin-icon.png"
               alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
             />
           </a>
         </>
