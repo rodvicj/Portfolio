@@ -1,8 +1,8 @@
-import type { MarkdownInstance } from "astro";
-import { format } from "date-fns";
-import { Technology } from "./Technology";
+import type { MarkdownInstance } from 'astro';
+import { format } from 'date-fns';
 
-import type { IFrontmatter } from "../types/IFrontMatter";
+import type { IFrontmatter } from '../types/IFrontMatter';
+import { Technology } from './Technology';
 
 type IBlogCardProps = {
   instance: MarkdownInstance<IFrontmatter>;
@@ -10,9 +10,12 @@ type IBlogCardProps = {
 
 const BlogCard = (props: IBlogCardProps) => (
   <>
-    <a className="hover:translate-y-1 overflow-hidden rounded-md bg-slate-800" href={props.instance.url}>
+    <a
+      className="overflow-hidden rounded-md bg-slate-800 hover:translate-y-1"
+      href={props.instance.url}
+    >
       <div>
-        <div className="aspect-w-3 aspect-h-2">
+        <div className="aspect-h-2 aspect-w-3">
           <img
             className="h-full w-full object-cover object-center"
             src={props.instance.frontmatter.imgSrc}
@@ -21,7 +24,7 @@ const BlogCard = (props: IBlogCardProps) => (
           />
         </div>
 
-        <div className="px-3 pt-4 pb-6 text-center">
+        <div className="px-3 pb-6 pt-4 text-center">
           <h2 className="text-xl font-semibold">
             {props.instance.frontmatter.title}
           </h2>
@@ -29,7 +32,7 @@ const BlogCard = (props: IBlogCardProps) => (
           <div className="mt-1 text-xs text-gray-400">
             {format(
               new Date(props.instance.frontmatter.pubDate),
-              "LLL d, yyyy"
+              'LLL d, yyyy'
             )}
           </div>
           <div className="mt-2 text-sm">
@@ -37,12 +40,9 @@ const BlogCard = (props: IBlogCardProps) => (
           </div>
         </div>
 
-
-      <div className="ml-3 flex flex-wrap gap-2 px-3 pt-4 pb-6">
-        <Technology tags={props.instance.frontmatter.tags} />
-      </div>
-
-
+        <div className="ml-3 flex flex-wrap gap-2 px-3 pb-6 pt-4">
+          <Technology tags={props.instance.frontmatter.tags} />
+        </div>
       </div>
     </a>
   </>

@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <Section>
-      <div className="flex items-center justify-between py-4 px-7 md:px-10">
+      <div className="flex items-center justify-between px-7 py-4 md:px-10">
         <div
           onClick={() => setOpen(!open)}
           className="absolute right-9 top-11 cursor-pointer text-3xl text-gray-200 md:hidden"
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         <ul
           // className={`text-gray-200 flex flex-col md:items-center m-auto absolute md:static z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-          className={`transition-{text-gray-200 ease-in} absolute left-0 w-full pt-12 pl-16 duration-500 md:static md:z-auto  md:flex md:w-auto md:items-center md:bg-slate-900 md:pb-0 md:pl-0 md:transition-none  ${
+          className={`transition-{text-gray-200 ease-in} absolute left-0 w-full pl-16 pt-12 duration-500 md:static md:z-auto  md:flex md:w-auto md:items-center md:bg-slate-900 md:pb-0 md:pl-0 md:transition-none  ${
             // open ? "top-20 bg-slate-900" : "top-[-490px]"
             open ? 'top-0 bg-slate-800' : 'top-[-490px]'
           }`}

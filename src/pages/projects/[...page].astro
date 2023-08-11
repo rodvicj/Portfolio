@@ -1,6 +1,14 @@
 ---
-import type { FrontmatterPage, IFrontmatter, } from "@/astro-boilerplate-components/index";
-import { BlogGallery, NewerOlderPagination, PaginationHeader, Section, } from "@/astro-boilerplate-components/index";
+import type {
+  FrontmatterPage,
+  IFrontmatter,
+} from "@/astro-boilerplate-components/index";
+import {
+  BlogGallery,
+  NewerOlderPagination,
+  PaginationHeader,
+  Section,
+} from "@/astro-boilerplate-components/index";
 import Base from "@/templates/Base.astro";
 import { AppConfig } from "@/utils/AppConfig";
 import { sortByDate } from "@/utils/Posts";
@@ -44,5 +52,4 @@ const description =
   <Section>
     <NewerOlderPagination page={page} />
   </Section>
-
 </Base>
