@@ -1,7 +1,7 @@
 import {
   GradientText,
   HeroAvatar,
-  HeroSocial,
+  // HeroSocial,
   Section,
 } from '@/astro-boilerplate-components/index';
 
@@ -29,20 +29,7 @@ const Hero = () => (
           loading="lazy"
         />
       }
-      socialButtons={
-        <>
-          <a
-            href="https://www.linkedin.com/in/rodvicj/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-        </>
-      }
+      socialButtons={<></>}
     />
   </Section>
 );

@@ -44,7 +44,7 @@ const Navbar = () => {
           </li>
           {Header.map((header) => (
             <li key={header.name} className=" my-5 text-xl md:my-0 md:ml-8">
-              {header.name === 'Github' ? (
+              {header.name === 'Github' || header.name === 'LinkedIn' ? (
                 <GradientText>
                   <a
                     href={header.link}
