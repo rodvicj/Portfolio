@@ -16,9 +16,15 @@ const HeroAvatar = (props: IHeroAvatarProps) => (
 
       <div className="mt-3 flex gap-1">{props.socialButtons}</div>
     </div>
-
     <div className="shrink-0">{props.avatar}</div>
   </div>
 );
 
 export { HeroAvatar };
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// <FontAwesomeIcon icon={faGithub} />
+//
+// module
+// "@fortawesome/free-brands-svg-icons": "^6.3.0",
