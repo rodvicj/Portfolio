@@ -5,7 +5,7 @@ description: This web-app is my CS50's final project.
 pubDate: 2020-02-06T00:00:00Z
 imgSrc: '/assets/images/image-post.jpeg'
 imgAlt: 'Image post'
-tags: ["Django", "Python", "Bootstrap" ]
+tags: ["Django", "Python", "JavaScript", "Bootstrap" ]
 ---
 
 # VACCINATION RECORDS
