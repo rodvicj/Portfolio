@@ -2,6 +2,7 @@
 import type { IFrontmatterProject } from "@/astro-boilerplate-components/index";
 
 import { BlogPost } from "@/components/BlogPost";
+
 import Base from "@/templates/Base.astro";
 import { AppConfig } from "@/utils/AppConfig";
 
@@ -11,6 +12,7 @@ export interface Props {
 
 // const { content } = Astro.props as Props;
 const content = Astro.props as Props;
+
 const title = `${content.content.title} - ${AppConfig.site_name}`;
 ---
 

@@ -3,27 +3,24 @@
 import type { IFrontmatter } from "@/astro-boilerplate-components/index";
 import { Hero } from "@/components/Hero";
 // import { ProjectList } from "@/components/ProjectList";
-import { RecentPosts } from "@/components/RecentPosts";
+import { AllPosts } from "@/components/AllPosts";
 import Base from "@/templates/Base.astro";
 import { AppConfig } from "@/utils/AppConfig";
 import { sortByDate } from "@/utils/Posts";
 
-const allPosts = await Astro.glob<IFrontmatter>("./projects/*.md");
+const posts = await Astro.glob<IFrontmatter>("./projects/*.md");
 
 // const allProjects = await Astro.glob<IFrontmatterProject>("./projects/*.md");
-const sortedPosts = sortByDate(allPosts);
+const sortedPosts = sortByDate(posts);
 // const lastThreePosts = sortedPosts.slice(0, 3);
-const lastThreePosts = sortedPosts;
 const { title } = AppConfig;
 const { description } = AppConfig;
 ---
 
 <Base head={{ title, description }}>
   <Hero />
-
   <!-- <ProjectList projectList={allProjects} /> -->
-  <RecentPosts postList={lastThreePosts} />
+  <AllPosts postList={sortedPosts} />
 </Base>
-<!-- TODO: Add technology stacks in post -->
-<!-- TODO: Finalized the portfolio, enhance the UI and UX -->
 <!-- TODO: Change description of markdown projects -->
+<!-- TODO: find a way how to link README in github repo to portfolio for dynamic display of posts -->

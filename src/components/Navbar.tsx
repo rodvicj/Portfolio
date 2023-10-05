@@ -11,7 +11,6 @@ import {
   Section,
 } from '@/astro-boilerplate-components/index';
 // import { FaInstagram, FaFacebook } from "react-icons/fa";
-
 // <FontAwesomeIcon icon="fa-duotone fa-xmark" />
 // <FontAwesomeIcon icon="fa-duotone fa-chart-simple-horizontal" />
 

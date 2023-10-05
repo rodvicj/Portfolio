@@ -23,12 +23,10 @@ const BlogCard = (props: IBlogCardProps) => (
             loading="lazy"
           />
         </div>
-
         <div className="px-3 pb-6 pt-4 text-center">
           <h2 className="text-xl font-semibold">
             {props.instance.frontmatter.title}
           </h2>
-
           <div className="mt-1 text-xs text-gray-400">
             {format(
               new Date(props.instance.frontmatter.pubDate),
@@ -39,7 +37,6 @@ const BlogCard = (props: IBlogCardProps) => (
             {props.instance.frontmatter.description}
           </div>
         </div>
-
         <div className="ml-3 flex flex-wrap gap-2 px-3 pb-6 pt-4">
           <Technology tags={props.instance.frontmatter.tags} />
         </div>
