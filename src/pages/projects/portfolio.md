@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Portfolio
-description: This portfolio website where my projects are being showcased.
+description: This portfolio website.
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post 2'
