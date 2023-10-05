@@ -10,40 +10,30 @@ tags: ["Bootstrap", "CSS", "HTML", "Python", "Django"]
 
 # Commerce
 
-A web application called commerce, belows the list of some of applications features:
+### Github repository: <https://github.com/rodvicj/Commerce>
 
-w Userw caw create a new listinw bw defaulw thw item will be active and the users will have the ability to close the listing as well.
-* Pages where all active listings will be shown. a listing includes the title, description, current price, and photo (if one exists for the listing).
-* Users can add/remove a listing to their “Watchlist.”
-* Users can bid on a listing that is currently active.
-* Users will be able to add comments to the listing page.
-* Other pages like watchlist, categories are also available.
-Watchlist: which should display all of the listings that a user has added to their watchlist.
-Categories: Users should be able to visit a page that displays a list of all listing categories.
+## What's contained in each file you created
 
-## Requirements
-
-* install packages that are inside requirements.txt
-* How to run your application
-* Packages that need t obe installed should be in requirements.txt
-
-## What's contained in each file you created.
-
-* folder structure
-
-## Installation
+```
+$PROJECT_ROOT
+│   # auctions application files
+├── auctions
+│   # django projects files
+└── commerce
+```
 
 
 ## Usage
 
-run `python manage.py runserver`
+* install packages by running `pip: -r requirements.txt`
+* run `python manage.py runserver` to start the server
 
 
 ## TODO
 
-* add this category
-(e.g. Fashion, Toys, Electronics, Home, etc.).
+* add (Fashion, Toys, Electronics, Home, etc.) to category (done)
+* convert urls to API and use reactjs for frontend
 
 ## About
 
-This is my implementation of the CS50W project 2 called [commerce](https://cs50.harvard.edu/web/2020/projects/2/commerce/).
+A commerce website with some basic functionalities including but not limited to display products, add a product, add to cart, add to wishlist, view by category.

@@ -10,11 +10,10 @@ tags: ["Javascript", "Bootstrap", "CSS", "Python", "Django", "Reactjs" ]
 
 # rodvicj's Homepage
 
-This portfolio website [https://rodvicj.netlify.app/](https://rodvicj.netlify.app/).
+### Github Repository: <https://github.com/rodvicj/Portfolio>
 
-## Boilerplate
+### [https://rodvicj.netlify.app/](https://rodvicj.netlify.app/)
 
-[https://github.com/ixartz/Astro-boilerplate](Astro-boilerplate)
 
 ## Project structure
 
@@ -30,9 +29,11 @@ $PROJECT_ROOT
     ├── pages
     │   # Non-react modules
     ├── templates
-    │   # Static files for images and 3d model file
+    │   # Static files for images and 4d model file
     └── public
 ```
+
+### Boilerplate [https://github.com/ixartz/Astro-boilerplate](Astro-boilerplate)
 
 ## License
 
