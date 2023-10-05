@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Commerce
-description: Design an eBay-like e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.”
+description: A simple django commerce website (Will be converted to API/ReactJS)
 pubDate: 2020-02-06T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post'
