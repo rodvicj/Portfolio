@@ -5,7 +5,7 @@ description: This portfolio website.
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post 2'
-tags: ["Javascript", "Bootstrap", "CSS", "Python", "Django", "Reactjs" ]
+tags: ["Astrojs", "Tailwindcss", "TypeScript", "Reactjs" ]
 ---
 
 # rodvicj's Homepage

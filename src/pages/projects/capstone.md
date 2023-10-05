@@ -5,7 +5,7 @@ description: My final project for CS50W is a website portfolio that showcase pro
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'
 imgAlt: 'Image post 2'
-tags: ["Astrojs", "Tailwindcss", "TypeScript", "Reactjs" ]
+tags: ["Javascript", "Bootstrap", "CSS", "Python", "Django", "Reactjs" ]
 ---
 
 # CS50W Final Project
