@@ -15,6 +15,7 @@ import { PaginationHeader } from './components/PaginationHeader';
 import { PostContent } from './components/PostContent';
 import { PostHeader } from './components/PostHeader';
 import { Project } from './components/Project';
+import { ProjectGallery } from './components/ProjectGallery';
 import { Section } from './components/Section';
 import { ColorTags, Tags } from './components/Tags';
 import { Technology } from './components/Technology';
@@ -52,6 +53,7 @@ export {
   PostContent,
   PostHeader,
   Project,
+  ProjectGallery,
   Section,
   Tags,
   Technology,

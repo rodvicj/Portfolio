@@ -11,7 +11,7 @@ type IAllPostsProps = {
   postList: MarkdownInstance<IFrontmatter>[];
 };
 
-const AllPosts = (props: IAllPostsProps) => (
+const AllProjects = (props: IAllPostsProps) => (
   <Section
     title={
       <div className="flex items-baseline justify-between">
@@ -29,4 +29,4 @@ const AllPosts = (props: IAllPostsProps) => (
   </Section>
 );
 
-export { AllPosts };
+export { AllProjects };
