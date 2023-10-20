@@ -4,7 +4,7 @@
 
 ## Boilerplate
 
-[https://github.com/ixartz/Astro-boilerplate](Astro-boilerplate)
+[Astro-boilerplate](https://github.com/ixartz/Astro-boilerplate/)
 
 ## Project structure
 
