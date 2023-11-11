@@ -1,3 +1,5 @@
+import type { MarkdownInstance } from 'astro';
+
 export interface IFrontmatter {
   title: string;
   description: string;
@@ -15,7 +17,7 @@ export type Page<T> = import('astro').Page<T>;
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 // export type MarkdownInstance<T> = import('astro').MarkdownInstance<T>;
 
-// export type FrontmatterPage = Page<MarkdownInstance<IFrontmatter>>;
+export type FrontmatterPage = Page<MarkdownInstance<IFrontmatter>>;
 
 // export interface MarkdownInstance<T extends Record<string, any>> {
 //   /* Any data specified in this file's YAML frontmatter */

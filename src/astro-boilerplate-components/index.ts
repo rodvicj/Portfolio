@@ -20,7 +20,7 @@ import { Section } from './components/Section';
 import { ColorTags, Tags } from './components/Tags';
 import { Technology } from './components/Technology';
 import type {
-  // FrontmatterPage,
+  FrontmatterPage,
   IFrontmatter,
   // IFrontmatterProject,
   // MarkdownInstance,
@@ -32,13 +32,12 @@ export {
   BlogGallery,
   ColorTags,
   FooterCopyright,
-  // type FrontmatterPage,
+  type FrontmatterPage,
   GradientText,
   Header,
   HeroAvatar,
   HeroSocial,
   type IFrontmatter,
-  // type IFrontmatterProject,
   Logo,
   // type MarkdownInstance,
   NavbarTwoColumns,

@@ -1,7 +1,5 @@
 ---
-import type { MarkdownInstance } from "astro";
-
-import type { IFrontmatter, Page } from "@/astro-boilerplate-components/index";
+import type { IFrontmatter, FrontmatterPage } from "@/astro-boilerplate-components/index";
 import {
   BlogGallery,
   NewerOlderPagination,
@@ -25,8 +23,7 @@ export async function getStaticPaths({ paginate }: GetStaticPaths) {
 }
 
 interface Props {
-  // page: FrontmatterPage;
-  page: Page<MarkdownInstance<IFrontmatter>>;
+  page: FrontmatterPage;
 }
 
 const { page } = Astro.props as Props;
