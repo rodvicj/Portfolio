@@ -1,24 +1,23 @@
 ---
-import type {
-  FrontmatterPage,
-  IFrontmatter,
-} from '@/astro-boilerplate-components/index';
+import type { MarkdownInstance } from "astro";
+
+import type { IFrontmatter, Page } from "@/astro-boilerplate-components/index";
 import {
   BlogGallery,
   NewerOlderPagination,
   PaginationHeader,
   Section,
-} from '@/astro-boilerplate-components/index';
-import Base from '@/templates/Base.astro';
-import { AppConfig } from '@/utils/AppConfig';
-import { sortByDate } from '@/utils/Posts';
+} from "@/astro-boilerplate-components/index";
+import Base from "@/templates/Base.astro";
+import { AppConfig } from "@/utils/AppConfig";
+import { sortByDate } from "@/utils/Posts";
 
 type GetStaticPaths = {
   paginate: any;
 }; // Overrides `GetStaticPathsOptions` types from Astro
 
 export async function getStaticPaths({ paginate }: GetStaticPaths) {
-  const allPosts = await Astro.glob<IFrontmatter>('./*.md');
+  const allPosts = await Astro.glob<IFrontmatter>("./*.md");
   const sortedPosts = sortByDate(allPosts);
 
   // Return a paginated collection of paths for all posts
@@ -26,7 +25,8 @@ export async function getStaticPaths({ paginate }: GetStaticPaths) {
 }
 
 interface Props {
-  page: FrontmatterPage;
+  // page: FrontmatterPage;
+  page: Page<MarkdownInstance<IFrontmatter>>;
 }
 
 const { page } = Astro.props as Props;
@@ -34,7 +34,7 @@ const titleSuffix = ` - ${AppConfig.site_name}`;
 const titleBase = `Blog page ${page.currentPage}`;
 const title = titleBase + titleSuffix;
 const description =
-  'Pagination example built with Astro styled with Tailwind CSS.';
+  "Pagination example built with Astro styled with Tailwind CSS.";
 ---
 
 <Base head={{ title, description }}>

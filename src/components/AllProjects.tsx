@@ -18,7 +18,6 @@ const AllProjects = (props: IAllPostsProps) => (
         <div>
           Recent <GradientText>Projects</GradientText>
         </div>
-
         <div className="text-sm">
           <a href="/projects">View all Projects →</a>
         </div>

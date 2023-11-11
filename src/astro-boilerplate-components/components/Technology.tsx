@@ -1,4 +1,4 @@
-import { ColorTags, Tags } from "@/astro-boilerplate-components/index";
+import { ColorTags, Tags } from '@/astro-boilerplate-components/index';
 
 type TechStackProps = {
   tags: string[];

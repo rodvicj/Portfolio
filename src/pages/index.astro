@@ -1,24 +1,24 @@
 ---
 // import type { IFrontmatter, IFrontmatterProject } from "@/astro-boilerplate-components/index";
-import type { IFrontmatter } from "@/astro-boilerplate-components/index";
-import Base from "@/templates/Base.astro";
-import { Hero } from "@/components/Hero";
-import { AllProjects } from "@/components/AllProjects";
-import { AppConfig } from "@/utils/AppConfig";
-import { sortByDate } from "@/utils/Posts";
+import type { IFrontmatter } from '@/astro-boilerplate-components/index';
+import { AllProjects } from '@/components/AllProjects';
+import { Hero } from '@/components/Hero';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+import { sortByDate } from '@/utils/Posts';
 
-const projects = await Astro.glob<IFrontmatter>("./projects/*.md");
+const projects = await Astro.glob<IFrontmatter>('./projects/*.md');
 
 // const allProjects = await Astro.glob<IFrontmatterProject>("./projects/*.md");
 const sortedProjects = sortByDate(projects);
-// const lastThreePosts = sortedPosts.slice(0, 3);
+const lastThreeProjects = sortedProjects.slice(0, 3);
 const { title } = AppConfig;
 const { description } = AppConfig;
 ---
 
 <Base head={{ title, description }}>
   <Hero />
-  <AllProjects postList={sortedProjects} />
+  <AllProjects postList={lastThreeProjects} />
 </Base>
 <!-- TODO: Change description of markdown projects -->
 <!-- TODO: find a way how to link README in github repo to portfolio for dynamic display of posts -->

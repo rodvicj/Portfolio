@@ -20,10 +20,10 @@ import { Section } from './components/Section';
 import { ColorTags, Tags } from './components/Tags';
 import { Technology } from './components/Technology';
 import type {
-  FrontmatterPage,
+  // FrontmatterPage,
   IFrontmatter,
-  IFrontmatterProject,
-  MarkdownInstance,
+  // IFrontmatterProject,
+  // MarkdownInstance,
   Page,
 } from './types/IFrontMatter';
 
@@ -32,17 +32,15 @@ export {
   BlogGallery,
   ColorTags,
   FooterCopyright,
-  type FrontmatterPage,
+  // type FrontmatterPage,
   GradientText,
   Header,
   HeroAvatar,
   HeroSocial,
-  // type IFrontmatter as IFrontmatter,
-  // type IFrontmatterProject as IFrontmatterProject,
   type IFrontmatter,
-  type IFrontmatterProject,
+  // type IFrontmatterProject,
   Logo,
-  type MarkdownInstance,
+  // type MarkdownInstance,
   NavbarTwoColumns,
   NavMenu,
   NavMenuItem,

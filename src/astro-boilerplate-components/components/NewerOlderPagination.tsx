@@ -1,7 +1,10 @@
-import type { FrontmatterPage } from '../types/IFrontMatter';
+import type { MarkdownInstance } from 'astro';
+
+import type { IFrontmatter, Page } from '@/astro-boilerplate-components/index';
 
 type INewerOlderPaginationProps = {
-  page: FrontmatterPage;
+  // page: FrontmatterPage;
+  page: Page<MarkdownInstance<IFrontmatter>>;
 };
 
 const NewerOlderPagination = (props: INewerOlderPaginationProps) => (

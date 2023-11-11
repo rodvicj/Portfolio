@@ -1,10 +1,11 @@
 import { format } from 'date-fns';
 
-import type { IFrontmatterProject } from '../types/IFrontMatter';
+import type { IFrontmatter } from '@/astro-boilerplate-components/index';
+
 import { Technology } from './Technology';
 
 type IPostHeaderProps = {
-  content: IFrontmatterProject;
+  content: IFrontmatter;
   author: string;
 };
 

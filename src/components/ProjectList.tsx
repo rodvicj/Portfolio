@@ -1,6 +1,6 @@
 import type { MarkdownInstance } from 'astro';
 
-import type { IFrontmatterProject } from '@/astro-boilerplate-components/index';
+import type { IFrontmatter } from '@/astro-boilerplate-components/index';
 import {
   GradientText,
   Project,
@@ -8,7 +8,7 @@ import {
 } from '@/astro-boilerplate-components/index';
 
 type IRecentProjectsProps = {
-  projectList: MarkdownInstance<IFrontmatterProject>[];
+  projectList: MarkdownInstance<IFrontmatter>[];
 };
 
 // type IProjectProps = {

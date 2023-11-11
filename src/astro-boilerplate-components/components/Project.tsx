@@ -1,10 +1,11 @@
-import { format } from "date-fns";
-import type { MarkdownInstance } from "astro";
-import type { IFrontmatterProject as IFrontmatterProject } from "../types/IFrontMatter";
-import { Technology } from "./Technology";
+import type { MarkdownInstance } from 'astro';
+import { format } from 'date-fns';
+
+import type { IFrontmatter } from '../types/IFrontMatter';
+import { Technology } from './Technology';
 
 type IProjectProps = {
-  instance: MarkdownInstance<IFrontmatterProject>;
+  instance: MarkdownInstance<IFrontmatter>;
 };
 
 const Project = (props: IProjectProps) => (
@@ -32,7 +33,7 @@ const Project = (props: IProjectProps) => (
         </div>
       </div>
       <div className="mt-1 text-xs text-gray-400">
-        {format(new Date(props.instance.frontmatter.pubDate), "LLL d, yyyy")}
+        {format(new Date(props.instance.frontmatter.pubDate), 'LLL d, yyyy')}
       </div>
       <p className="mt-3 text-gray-400">
         {props.instance.frontmatter.description}
