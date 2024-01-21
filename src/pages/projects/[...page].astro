@@ -14,6 +14,7 @@ type GetStaticPaths = {
   paginate: any;
 }; // Overrides `GetStaticPathsOptions` types from Astro
 
+// TODO: fetch updated readme from github repo
 export async function getStaticPaths({ paginate }: GetStaticPaths) {
   const allPosts = await Astro.glob<IFrontmatter>("./*.md");
   const sortedPosts = sortByDate(allPosts);
