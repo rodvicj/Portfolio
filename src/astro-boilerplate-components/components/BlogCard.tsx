@@ -24,21 +24,21 @@ const BlogCard = (props: IBlogCardProps) => (
             loading="lazy"
           />
         </div>
-        <div className="px-3 pb-6 pt-4 text-center">
+        <div className="text-center">
           <h2 className="text-xl font-semibold">
             {props.instance.frontmatter.title}
           </h2>
-          <div className="mt-1 text-xs text-gray-400">
+          <div className="pb-2 pt-1 text-xs text-gray-400">
             {format(
               new Date(props.instance.frontmatter.pubDate),
               "LLL d, yyyy"
             )}
           </div>
-          <div className="mt-2 text-sm">
+          <div className="p-2 text-sm">
             {props.instance.frontmatter.description}
           </div>
         </div>
-        <div className="flex h-20 flex-wrap gap-2 p-3 pt-4">
+        <div className="flex h-20 flex-wrap gap-2 p-3">
           <Technology tags={props.instance.frontmatter.tags} />
         </div>
       </div>
