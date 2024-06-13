@@ -1,4 +1,4 @@
-import type { MarkdownInstance } from 'astro';
+import type { MarkdownInstance } from "astro";
 
 export interface IFrontmatter {
   title: string;
@@ -12,7 +12,7 @@ export interface IFrontmatter {
 // Workaround to import Astro type. Otherwise, it'll have some compilation errors
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-export type Page<T> = import('astro').Page<T>;
+export type Page<T> = import("astro").Page<T>;
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 // export type MarkdownInstance<T> = import('astro').MarkdownInstance<T>;

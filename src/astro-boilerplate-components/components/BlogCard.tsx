@@ -1,8 +1,8 @@
-import type { MarkdownInstance } from 'astro';
-import { format } from 'date-fns';
+import type { MarkdownInstance } from "astro";
+import { format } from "date-fns";
 
-import type { IFrontmatter } from '../types/IFrontMatter';
-import { Technology } from './Technology';
+import type { IFrontmatter } from "../types/IFrontMatter";
+import { Technology } from "./Technology";
 
 type IBlogCardProps = {
   instance: MarkdownInstance<IFrontmatter>;
@@ -11,10 +11,11 @@ type IBlogCardProps = {
 const BlogCard = (props: IBlogCardProps) => (
   <>
     <a
-      className="overflow-hidden rounded-md bg-slate-800 hover:translate-y-1"
+      // className="overflow-hidden rounded-md bg-slate-800 hover:translate-y-1"
+      className="flex rounded-md bg-slate-800 hover:translate-y-1"
       href={props.instance.url}
     >
-      <div>
+      <div className="flex grow flex-col justify-between">
         <div className="aspect-h-2 aspect-w-3">
           <img
             className="h-full w-full object-cover object-center"
@@ -30,14 +31,14 @@ const BlogCard = (props: IBlogCardProps) => (
           <div className="mt-1 text-xs text-gray-400">
             {format(
               new Date(props.instance.frontmatter.pubDate),
-              'LLL d, yyyy'
+              "LLL d, yyyy"
             )}
           </div>
           <div className="mt-2 text-sm">
             {props.instance.frontmatter.description}
           </div>
         </div>
-        <div className="ml-3 flex flex-wrap gap-2 px-3 pb-6 pt-4">
+        <div className="flex h-20 flex-wrap gap-2 p-3 pt-4">
           <Technology tags={props.instance.frontmatter.tags} />
         </div>
       </div>

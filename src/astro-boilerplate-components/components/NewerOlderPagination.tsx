@@ -1,4 +1,4 @@
-import type { FrontmatterPage } from '@/astro-boilerplate-components/index';
+import type { FrontmatterPage } from "@/astro-boilerplate-components/index";
 
 type INewerOlderPaginationProps = {
   page: FrontmatterPage;

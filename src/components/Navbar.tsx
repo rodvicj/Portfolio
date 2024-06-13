@@ -1,6 +1,6 @@
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 import {
   GradientText,
@@ -9,7 +9,7 @@ import {
   // NavMenu,
   // NavMenuItem,
   Section,
-} from '@/astro-boilerplate-components/index';
+} from "@/astro-boilerplate-components/index";
 // import { FaInstagram, FaFacebook } from "react-icons/fa";
 // <FontAwesomeIcon icon="fa-duotone fa-xmark" />
 // <FontAwesomeIcon icon="fa-duotone fa-chart-simple-horizontal" />
@@ -23,16 +23,13 @@ const Navbar = () => {
         <div
           onClick={() => setOpen(!open)}
           className="absolute right-9 top-11 cursor-pointer text-3xl text-gray-200 md:hidden"
-          // className="text-3xl absolute right-9 md:hidden cursor-pointer text-gray-200"
         >
           {!open ? <FontAwesomeIcon icon={faBars} /> : <></>}
         </div>
 
         <ul
-          // className={`text-gray-200 flex flex-col md:items-center m-auto absolute md:static z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
-          className={`transition-{text-gray-200 ease-in} absolute left-0 w-full pl-16 pt-12 duration-500 md:static md:z-auto  md:flex md:w-auto md:items-center md:bg-slate-900 md:pb-0 md:pl-0 md:transition-none  ${
-            // open ? "top-20 bg-slate-900" : "top-[-490px]"
-            open ? 'top-0 bg-slate-800' : 'top-[-490px]'
+          className={`transition-{text-gray-200 ease-in} absolute left-0 w-full pl-16 pt-12 duration-500 md:static md:z-auto  md:flex md:w-auto md:items-center md:bg-slate-900 md:pb-0 md:pl-0 md:transition-none ${
+            open ? "top-0 bg-slate-800" : "top-[-490px]"
           }`}
         >
           <li
@@ -43,7 +40,7 @@ const Navbar = () => {
           </li>
           {Header.map((header) => (
             <li key={header.name} className=" my-5 text-xl md:my-0 md:ml-8">
-              {header.name === 'Github' || header.name === 'LinkedIn' ? (
+              {header.name === "Github" || header.name === "LinkedIn" ? (
                 <GradientText>
                   <a
                     href={header.link}

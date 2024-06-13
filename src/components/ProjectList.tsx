@@ -1,11 +1,11 @@
-import type { MarkdownInstance } from 'astro';
+import type { MarkdownInstance } from "astro";
 
-import type { IFrontmatter } from '@/astro-boilerplate-components/index';
+import type { IFrontmatter } from "@/astro-boilerplate-components/index";
 import {
   GradientText,
   Project,
   Section,
-} from '@/astro-boilerplate-components/index';
+} from "@/astro-boilerplate-components/index";
 
 type IRecentProjectsProps = {
   projectList: MarkdownInstance<IFrontmatter>[];

@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbaf4346-9e18-4408-b0c4-1989d3bdc96d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/astro-boilerplate-components/components/BlogCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro-boilerplate-components/components/BlogCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro-boilerplate-components/components/PostContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro-boilerplate-components/components/PostContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AllProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AllProjects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BlogPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BlogPost.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/Base.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/Base.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +72,7 @@
       <workItem from="1689729823504" duration="17000" />
       <workItem from="1695959452947" duration="53000" />
       <workItem from="1697721243442" duration="1000" />
+      <workItem from="1709861474715" duration="6000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,8 @@
-import type { MarkdownInstance } from 'astro';
+import type { MarkdownInstance } from "astro";
 
-import type { IFrontmatter } from '@/astro-boilerplate-components/index';
+import type { IFrontmatter } from "@/astro-boilerplate-components/index";
 
-import { Project } from './Project';
+import { Project } from "./Project";
 
 type IRecentProjectsProps = {
   projectList: MarkdownInstance<IFrontmatter>[];
