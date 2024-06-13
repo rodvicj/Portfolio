@@ -38,7 +38,7 @@ const BlogCard = (props: IBlogCardProps) => (
             {props.instance.frontmatter.description}
           </div>
         </div>
-        <div className="flex h-20 flex-wrap gap-2 p-3">
+        <div className="flex flex-wrap gap-1 p-3">
           <Technology tags={props.instance.frontmatter.tags} />
         </div>
       </div>
@@ -47,19 +47,3 @@ const BlogCard = (props: IBlogCardProps) => (
 );
 
 export { BlogCard };
-
-// TODO: Fix the inconsistent size of blogpost card container in the index page
-// NOTE: Maybe it's in the BlogGallery component
-
-// instance of elt {                                                                                                                                                                                │
-//     │  frontmatter: [Getter],                                                                                                                                                                         │
-//     │  file: [Getter],                                                                                                                                                                                │
-//     │  url: [Getter],                                                                                                                                                                                 │
-//     │  rawContent: [Getter],                                                                                                                                                                          │
-//     │  compiledContent: [Getter],                                                                                                                                                                     │
-//     │  '$$loadMetadata': [Getter],                                                                                                                                                                    │
-//     │  Content: [Getter],                                                                                                                                                                             │
-//     │  getHeaders: [Getter],                                                                                                                                                                          │
-//     │  default: [AsyncFunction: load],                                                                                                                                                                │
-//     │  [Symbol(Symbol.toStringTag)]: 'Module'                                                                                                                                                         │
-//     │}
