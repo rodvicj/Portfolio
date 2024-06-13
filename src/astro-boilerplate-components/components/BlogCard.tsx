@@ -15,7 +15,7 @@ const BlogCard = (props: IBlogCardProps) => (
       className="flex rounded-md bg-slate-800 hover:translate-y-1"
       href={props.instance.url}
     >
-      <div className="flex grow flex-col justify-between">
+      <div className="flex grow flex-col">
         <div className="aspect-h-2 aspect-w-3">
           <img
             className="h-full w-full object-cover object-center"
@@ -24,22 +24,25 @@ const BlogCard = (props: IBlogCardProps) => (
             loading="lazy"
           />
         </div>
-        <div className="text-center">
-          <h2 className="text-xl font-semibold">
-            {props.instance.frontmatter.title}
-          </h2>
-          <div className="pb-2 pt-1 text-xs text-gray-400">
-            {format(
-              new Date(props.instance.frontmatter.pubDate),
-              "LLL d, yyyy"
-            )}
+
+        <div className="flex grow flex-col justify-between">
+          <div className="py-2 text-center">
+            <h2 className="text-xl font-semibold">
+              {props.instance.frontmatter.title}
+            </h2>
+            <div className="pb-2 pt-1 text-xs text-gray-400">
+              {format(
+                new Date(props.instance.frontmatter.pubDate),
+                "LLL d, yyyy"
+              )}
+            </div>
+            <div className="p-2 text-left text-base">
+              {props.instance.frontmatter.description}
+            </div>
           </div>
-          <div className="p-2 text-sm">
-            {props.instance.frontmatter.description}
+          <div className="flex flex-wrap gap-1 p-3">
+            <Technology tags={props.instance.frontmatter.tags} />
           </div>
-        </div>
-        <div className="flex flex-wrap gap-1 p-3">
-          <Technology tags={props.instance.frontmatter.tags} />
         </div>
       </div>
     </a>

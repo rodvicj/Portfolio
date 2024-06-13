@@ -8,7 +8,7 @@ type IRecentPostsProps = {
 };
 
 const BlogGallery = (props: IRecentPostsProps) => (
-  <div className="grid auto-rows-fr grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
     {props.postList.map((elt) => (
       <BlogCard key={elt.url} instance={elt} />
     ))}
@@ -16,18 +16,3 @@ const BlogGallery = (props: IRecentPostsProps) => (
 );
 
 export { BlogGallery };
-
-// {/* ld:grid-cols-3 */}
-
-// instance of elt {                                                                                                                                                                                │
-//     │  frontmatter: [Getter],                                                                                                                                                                         │
-//     │  file: [Getter],                                                                                                                                                                                │
-//     │  url: [Getter],                                                                                                                                                                                 │
-//     │  rawContent: [Getter],                                                                                                                                                                          │
-//     │  compiledContent: [Getter],                                                                                                                                                                     │
-//     │  '$$loadMetadata': [Getter],                                                                                                                                                                    │
-//     │  Content: [Getter],                                                                                                                                                                             │
-//     │  getHeaders: [Getter],                                                                                                                                                                          │
-//     │  default: [AsyncFunction: load],                                                                                                                                                                │
-//     │  [Symbol(Symbol.toStringTag)]: 'Module'                                                                                                                                                         │
-//     │}
