@@ -9,7 +9,6 @@ import { sortByDate } from "@/utils/Posts";
 
 const projects = await Astro.glob<IFrontmatter>("./projects/*.md");
 
-// const allProjects = await Astro.glob<IFrontmatterProject>("./projects/*.md");
 const sortedProjects = sortByDate(projects);
 const lastThreeProjects = sortedProjects.slice(0, 3);
 const { title } = AppConfig;
@@ -20,5 +19,3 @@ const { description } = AppConfig;
   <Hero />
   <AllProjects postList={lastThreeProjects} />
 </Base>
-<!-- TODO: Change description of markdown projects -->
-<!-- TODO: find a way how to link README in github repo to portfolio for dynamic display of posts -->
