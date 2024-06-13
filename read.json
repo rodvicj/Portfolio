@@ -1,0 +1,18 @@
+{
+  "name": "README.md",
+  "path": "README.md",
+  "sha": "01791bcfcb2fa0c6e4ede23bbe590d56c068a028",
+  "size": 604,
+  "url": "https://api.github.com/repos/rodvicj/Portfolio/contents/README.md?ref=main",
+  "html_url": "https://github.com/rodvicj/Portfolio/blob/main/README.md",
+  "git_url": "https://api.github.com/repos/rodvicj/Portfolio/git/blobs/01791bcfcb2fa0c6e4ede23bbe590d56c068a028",
+  "download_url": "https://raw.githubusercontent.com/rodvicj/Portfolio/main/README.md",
+  "type": "file",
+  "content": "IyByb2R2aWNqJ3MgSG9tZXBhZ2UKCltodHRwczovL3JvZHZpY2oubmV0bGlm\neS5hcHAvXShodHRwczovL3JvZHZpY2oubmV0bGlmeS5hcHAvKQoKIyMgQm9p\nbGVycGxhdGUKCltBc3Ryby1ib2lsZXJwbGF0ZV0oaHR0cHM6Ly9naXRodWIu\nY29tL2l4YXJ0ei9Bc3Ryby1ib2lsZXJwbGF0ZS8pCgojIyBQcm9qZWN0IHN0\ncnVjdHVyZQoKYGBgCiRQUk9KRUNUX1JPT1QK4pSc4pSA4pSAIHB1YmxpYwri\nlJTilIDilIAgc3JjCiAgICDilIIgICAjIGl4YXJ0eidzIEFzdHJvLWJvaWxl\ncnBsYXRlLWNvbXBvbmVudHMKIMKgwqAg4pSc4pSA4pSAIEFzdHJvLWJvaWxl\ncnBsYXRlLWNvbXBvbmVudHMKICAgIOKUgiAgICMgVHlwZXNjcmlwdFJlYWN0\nIGNvbXBvbmVudCBmaWxlcwogICAg4pSc4pSA4pSAIGNvbXBvbmVudHMKICAg\nIOKUgiAgICMgUGFnZSBmaWxlcwogICAg4pSc4pSA4pSAIHBhZ2VzCiAgICDi\nlIIgICAjIE5vbi1yZWFjdCBtb2R1bGVzCiAgICDilJzilIDilIAgdGVtcGxh\ndGVzCiAgICDilIIgICAjIFN0YXRpYyBmaWxlcyBmb3IgaW1hZ2VzIGFuZCAz\nZCBtb2RlbCBmaWxlCiAgICDilJTilIDilIAgcHVibGljCmBgYAoKIyMgTGlj\nZW5zZQoKTUlUIExpY2Vuc2UuCg==\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/rodvicj/Portfolio/contents/README.md?ref=main",
+    "git": "https://api.github.com/repos/rodvicj/Portfolio/git/blobs/01791bcfcb2fa0c6e4ede23bbe590d56c068a028",
+    "html": "https://github.com/rodvicj/Portfolio/blob/main/README.md"
+  }
+}

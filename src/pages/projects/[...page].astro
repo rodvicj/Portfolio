@@ -19,6 +19,10 @@ type GetStaticPaths = {
 
 export async function getStaticPaths({ paginate }: GetStaticPaths) {
   const allPosts = await Astro.glob<IFrontmatter>("./*.md");
+
+  // just trying to console log all posts
+  console.log("display allpost");
+  console.log(allPosts);
   const sortedPosts = sortByDate(allPosts);
 
   // Return a paginated collection of paths for all posts
