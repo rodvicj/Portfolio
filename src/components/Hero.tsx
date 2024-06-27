@@ -1,6 +1,7 @@
 import {
   GradientText,
   HeroAvatar,
+  // HeroSocial,
   Section,
 } from "@/astro-boilerplate-components/index";
 
@@ -14,10 +15,10 @@ const Hero = () => (
       }
       description={
         <>
-          A <a className="hover:none text-cyan-400">web developer</a> from
+          A <span className="text-cyan-400">web developer</span> from
           Philippines, welcome to my{" "}
-          <a className="hover:none text-cyan-400">portfolio</a> website where I
-          show some of my projects.{" "}
+          <span className="text-cyan-400">portfolio</span> website where I show
+          some of my projects.{" "}
         </>
       }
       avatar={

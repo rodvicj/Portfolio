@@ -2,62 +2,47 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-import {
-  GradientText,
-  Header,
-  // NavbarTwoColumns,
-  // NavMenu,
-  // NavMenuItem,
-  Section,
-} from "@/astro-boilerplate-components/index";
-// import { FaInstagram, FaFacebook } from "react-icons/fa";
-// <FontAwesomeIcon icon="fa-duotone fa-xmark" />
-// <FontAwesomeIcon icon="fa-duotone fa-chart-simple-horizontal" />
+import { Header } from "@/astro-boilerplate-components/index";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Section>
-      <div className="flex items-center justify-between py-4">
-        <div
-          onClick={() => setOpen(!open)}
-          className="absolute right-9 top-11 cursor-pointer text-3xl text-gray-200 md:hidden"
-        >
-          {!open ? <FontAwesomeIcon icon={faBars} /> : <></>}
-        </div>
+    <nav className="mx-auto max-w-screen-lg py-6">
+      <button
+        onClick={() => setOpen(!open)}
+        className="absolute right-3 top-1 z-50 cursor-pointer text-3xl text-gray-200 sm:hidden"
+      >
+        {!open ? (
+          <FontAwesomeIcon icon={faBars} />
+        ) : (
+          <FontAwesomeIcon icon={faXmark} />
+        )}
+      </button>
 
-        <ul
-          className={`transition-{text-gray-200 ease-in} absolute left-0 w-full pl-16 pt-1 duration-500 md:static md:z-auto  md:flex md:w-auto md:items-center md:bg-slate-900 md:pb-0 md:pl-0 md:transition-none ${
-            open ? "top-0 bg-slate-800" : "top-[-490px]"
-          }`}
-        >
+      <ul
+        className={`absolute inset-y-0 right-0 z-10 flex flex-col gap-6 bg-slate-600/70 p-[min(20vh,5rem)4rem] text-center text-xl font-bold capitalize text-white backdrop-blur-lg sm:static sm:z-auto sm:flex sm:w-auto sm:translate-x-0 sm:flex-row sm:items-center sm:bg-transparent sm:p-2 sm:pb-0 sm:transition-none ${
+          open ? "translate-x-0" : "translate-x-full "
+        }`}
+      >
+        <li></li>
+        {Header.map((header) => (
           <li
-            onClick={() => setOpen(!open)}
-            className="absolute right-9 cursor-pointer text-3xl text-gray-200 md:hidden"
+            key={header.name}
+            className="transition duration-200 hover:scale-125 focus:scale-125 md:my-0 md:mr-8"
           >
-            {open ? <FontAwesomeIcon icon={faXmark} /> : <></>}
-          </li>
-          {Header.map((header) => (
-            <li
-              key={header.name}
-              className=" my-5 text-xl capitalize md:my-0 md:mr-8"
+            <a
+              className="hover:text-sky-500 focus:text-sky-500"
+              href={header.link}
+              target={header?.target}
+              rel="noopener noreferrer"
             >
-              <GradientText>
-                <a
-                  href={header.link}
-                  className="duration-500 hover:text-white"
-                  target={header.target}
-                  rel="noopener noreferrer"
-                >
-                  {header.name}
-                </a>
-              </GradientText>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </Section>
+              {header.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 
