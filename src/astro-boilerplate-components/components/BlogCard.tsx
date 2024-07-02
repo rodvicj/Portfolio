@@ -26,7 +26,7 @@ const BlogCard = (props: IBlogCardProps) => (
         </div>
 
         <div className="flex grow flex-col gap-5 p-4">
-          <div className="min-h-16 text-center">
+          <div className="text-center md:min-h-16">
             <h2 className="text-2xl font-semibold">
               {props.instance.frontmatter.title}
             </h2>
