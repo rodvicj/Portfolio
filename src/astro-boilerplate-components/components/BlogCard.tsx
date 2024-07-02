@@ -27,16 +27,16 @@ const BlogCard = (props: IBlogCardProps) => (
 
         <div className="flex grow flex-col justify-between">
           <div className="py-2 text-center">
-            <h2 className="text-xl font-semibold">
+            <h2 className="px-2 text-2xl font-semibold">
               {props.instance.frontmatter.title}
             </h2>
-            <div className="pb-2 pt-1 text-xs text-gray-400">
+            <div className="text-xs text-gray-400">
               {format(
                 new Date(props.instance.frontmatter.pubDate),
                 "LLL d, yyyy"
               )}
             </div>
-            <div className="p-2 text-left text-base">
+            <div className="p-5 text-left text-base">
               {props.instance.frontmatter.description}
             </div>
           </div>
