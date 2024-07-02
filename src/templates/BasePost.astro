@@ -16,6 +16,6 @@ const title = `${content.content.title} - ${AppConfig.site_name}`;
 
 <Base head={{ title, description: content.content.description }}>
   <BlogPost frontmatter={content.content}>
-    <slot />
+    <slot></slot>
   </BlogPost>
 </Base>
