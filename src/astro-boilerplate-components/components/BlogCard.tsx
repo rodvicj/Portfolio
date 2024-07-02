@@ -12,7 +12,7 @@ const BlogCard = (props: IBlogCardProps) => (
   <>
     <a
       // className="overflow-hidden rounded-md bg-slate-800 hover:translate-y-1"
-      className="flex rounded-md bg-slate-800 hover:translate-y-1"
+      className="flex h-full grow rounded-md bg-slate-800 hover:translate-y-1"
       href={props.instance.url}
     >
       <div className="flex grow flex-col">
@@ -25,8 +25,8 @@ const BlogCard = (props: IBlogCardProps) => (
           />
         </div>
 
-        <div className="flex grow flex-col gap-5 p-4">
-          <div className="text-center md:min-h-16">
+        <div className="flex grow flex-col p-4">
+          <div className="mb-2 text-center">
             <h2 className="text-2xl font-semibold">
               {props.instance.frontmatter.title}
             </h2>
@@ -38,14 +38,14 @@ const BlogCard = (props: IBlogCardProps) => (
             </div>
           </div>
 
-          <div className="flex h-full flex-col justify-between gap-5 pt-4">
+          <div className="flex h-full flex-col justify-between">
             <div className="text-center">
               <div className="text-left text-base">
                 {props.instance.frontmatter.description}
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-1 pt-4">
               <Technology tags={props.instance.frontmatter.tags} />
             </div>
           </div>
