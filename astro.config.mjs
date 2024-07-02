@@ -9,17 +9,7 @@ import { astroImageTools } from "astro-imagetools";
 export default defineConfig({
   // base: '.', // Set a path prefix.
   site: "https://example.com/", // Use to generate your sitemap and canonical URLs in your final build.
-  // Important!
-  // Only official '@astrojs/*' integrations are currently supported by Astro.
-  // Add 'experimental.integrations: true' to make 'astro-robots-txt' working
-  // with 'astro build' command.
-
-  // experimental: {
-  //   integrations: true,
-  // },
-  // experimental: {
-  //   assets: true,
-  // },
+  // trailingSlash: 'always', // Use to always append '/' at end of url
   markdown: {
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
@@ -35,4 +25,3 @@ export default defineConfig({
     astroImageTools,
   ],
 });
-
