@@ -18,16 +18,16 @@ const BlogCard = (props: IBlogCardProps) => (
       <div className="flex grow flex-col">
         <div className="aspect-h-2 aspect-w-3">
           <img
-            className="h-full w-full object-cover object-center"
+            className="size-full object-cover object-center"
             src={props.instance.frontmatter.imgSrc}
             alt={props.instance.frontmatter.imgAlt}
             loading="lazy"
           />
         </div>
 
-        <div className="flex grow flex-col justify-between">
-          <div className="py-2 text-center">
-            <h2 className="px-2 text-2xl font-semibold">
+        <div className="flex grow flex-col gap-5 p-4">
+          <div className="min-h-16 text-center">
+            <h2 className="text-2xl font-semibold">
               {props.instance.frontmatter.title}
             </h2>
             <div className="text-xs text-gray-400">
@@ -36,12 +36,18 @@ const BlogCard = (props: IBlogCardProps) => (
                 "LLL d, yyyy"
               )}
             </div>
-            <div className="p-5 text-left text-base">
-              {props.instance.frontmatter.description}
-            </div>
           </div>
-          <div className="flex flex-wrap gap-1 p-3">
-            <Technology tags={props.instance.frontmatter.tags} />
+
+          <div className="flex h-full flex-col justify-between gap-5 pt-4">
+            <div className="text-center">
+              <div className="text-left text-base">
+                {props.instance.frontmatter.description}
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-1">
+              <Technology tags={props.instance.frontmatter.tags} />
+            </div>
           </div>
         </div>
       </div>
