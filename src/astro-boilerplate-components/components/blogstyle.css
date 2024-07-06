@@ -1,0 +1,49 @@
+:root {
+  --theme-background-subtle: #1c1f26;
+  --theme-border-subtlest-tertiary: color-mix(in srgb,
+      #525866,
+      transparent 80%);
+  --theme-border-subtlest-secondary: color-mix(in srgb,
+      #525866,
+      transparent 60%);
+}
+
+button {
+  border: transparent;
+}
+
+div {
+  color: #525866;
+}
+
+.min-h-card {
+  min-height: 384px;
+  color: #000;
+}
+
+.max-h-cardLarge {
+  max-height: 432px;
+}
+
+.rounded-16 {
+  border-radius: 16px;
+}
+
+.bg-background-subtle {
+  background-color: var(--theme-background-subtle);
+}
+
+.border-border-subtlest-tertiary {
+  border-color: var(--theme-border-subtlest-tertiary);
+}
+
+.border-subtlest-secondary:hover {
+  border-color: var(--theme-border-subtlest-secondary);
+}
+
+.shadow-2 {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* group relative flex h-full snap-start flex-col border p-2 */
