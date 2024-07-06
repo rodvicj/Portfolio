@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav>
           <button
             onClick={() => setOpen(!open)}
-            className="absolute right-5 z-50 cursor-pointer text-3xl text-gray-200 sm:hidden"
+            className="fixed right-5 z-50 cursor-pointer text-3xl text-gray-200 sm:hidden"
           >
             {!open ? (
               <FontAwesomeIcon icon={faBars} />
