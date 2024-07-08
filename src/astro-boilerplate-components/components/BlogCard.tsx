@@ -39,7 +39,7 @@ const BlogCard = (props: IBlogCardProps) => (
           </div>
 
           <div className="flex h-full flex-col justify-between">
-            <div className="text-center">
+            <div className="grow text-center">
               <div className="text-left text-base">
                 {props.instance.frontmatter.description}
               </div>
