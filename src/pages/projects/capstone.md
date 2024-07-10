@@ -1,6 +1,6 @@
 ---
 layout: '@/templates/BasePost.astro'
-title: CS50W Capstone (Portfolio)
+title: Portfolio - CS50W Capstone
 description: My final project for CS50W is a website portfolio that showcase projects and also includes a blogpost.
 pubDate: 2020-02-05T00:00:00Z
 imgSrc: '/assets/images/image-post2.jpeg'

@@ -24,10 +24,9 @@ const BlogCard = (props: IBlogCardProps) => (
             loading="lazy"
           />
         </div>
-
         <div className="flex grow flex-col p-4">
           <div className="mb-2 text-center">
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-lg font-semibold">
               {props.instance.frontmatter.title}
             </h2>
             <div className="text-xs text-gray-400">
