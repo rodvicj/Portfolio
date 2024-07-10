@@ -37,17 +37,11 @@ const BlogCard = (props: IBlogCardProps) => (
               )}
             </div>
           </div>
-
-          <div className="flex h-full flex-col justify-between">
-            <div className="grow text-center">
-              <div className="text-left text-base">
-                {props.instance.frontmatter.description}
-              </div>
-            </div>
-
-            <div className="flex flex-wrap gap-1 pt-4">
-              <Technology tags={props.instance.frontmatter.tags} />
-            </div>
+          <div className="grow text-center text-base">
+            {props.instance.frontmatter.description}
+          </div>
+          <div className="flex flex-wrap gap-1 self-center pt-4">
+            <Technology tags={props.instance.frontmatter.tags} />
           </div>
         </div>
       </div>
