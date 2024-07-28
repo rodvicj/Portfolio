@@ -2,6 +2,7 @@ import { BlogCard } from "./components/BlogCard";
 import { BlogGallery } from "./components/BlogGallery";
 import { FooterCopyright } from "./components/FooterCopyright";
 import { GradientText } from "./components/GradientText";
+import type { HeaderItem } from "./components/Header";
 import { Header } from "./components/Header";
 import { HeroAvatar } from "./components/HeroAvatar";
 import { HeroSocial } from "./components/HeroSocial";
@@ -28,16 +29,18 @@ import type {
 } from "./types/IFrontMatter";
 
 export {
+  type FrontmatterPage,
+  type IFrontmatter,
+  type Page,
   BlogCard,
   BlogGallery,
   ColorTags,
   FooterCopyright,
-  type FrontmatterPage,
   GradientText,
   Header,
+  HeaderItem,
   HeroAvatar,
   HeroSocial,
-  type IFrontmatter,
   Logo,
   // type MarkdownInstance,
   NavbarTwoColumns,
@@ -45,7 +48,6 @@ export {
   NavMenuItem,
   NewerOlderPagination,
   Newsletter,
-  type Page,
   PaginationHeader,
   PostContent,
   PostHeader,
