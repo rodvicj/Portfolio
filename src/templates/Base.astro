@@ -1,7 +1,9 @@
 ---
 import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
 import { AppConfig } from "@/utils/AppConfig";
+
+// import { Navbar } from "@/components/Navbar";
+import Navbar from "./Navbar.astro";
 
 export interface Props {
   head: {
@@ -37,7 +39,8 @@ const {
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body class="overflow-x-hidden bg-slate-900 text-gray-100">
-    <Navbar client:only="react" />
+    <!-- <Navbar client:only="react" /> -->
+    <Navbar />
     <slot></slot>
     <Footer />
   </body>

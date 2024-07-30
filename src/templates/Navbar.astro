@@ -1,0 +1,96 @@
+---
+import { Icon } from "astro-icon/components";
+
+import { Header, Section } from "@/astro-boilerplate-components/index";
+---
+
+<Section>
+  <header class="mb-10">
+    <button
+      id="header__menu-btn"
+      class="absolute right-5 z-50 cursor-pointer text-3xl text-gray-200 sm:hidden"
+    >
+      <Icon id="bars" style="display: inline" name="bars" />
+    </button>
+    <nav>
+      <ul
+        id="header__nav-items"
+        data-visible="false"
+        class="fixed inset-y-0 right-0 z-10 -ml-6 flex flex-col items-center gap-6 bg-slate-600/70 p-[min(20vh,3rem)4rem] text-center text-xl capitalize text-white backdrop-blur-lg transition duration-300 ease-in sm:static sm:z-auto sm:flex sm:w-auto sm:translate-x-0 sm:flex-row sm:justify-start sm:bg-transparent sm:p-2 sm:pb-0 sm:transition-none"
+      >
+        <li>
+          <button
+            id="header__close-btn"
+            class="absolute right-3 top-2 z-50 cursor-pointer text-3xl text-gray-200 sm:hidden"
+          >
+            <Icon id="xmark" style="display: inline" name="xmark" />
+          </button>
+        </li>
+
+        {Header.map((header) => (
+          <li class="transition duration-200 hover:scale-125 focus:scale-125 md:my-0 md:mr-8">
+            <a
+              class="hover:text-sky-500 focus:text-sky-500"
+              href={header.link}
+              target={header?.target}
+              rel="noopener noreferrer"
+            >
+              {header.name === "github" || header.name === "linkedin" ? (
+                <Icon class={header.class} name={header.name} />
+              ) : (
+                header.name
+              )}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </header>
+</Section>
+
+<style>
+  @media (max-width: 639px) {
+    #header__nav-items[data-visible="false"] {
+      transform: translateX(100%);
+    }
+
+    #header__nav-items[data-visible="true"] {
+      transform: translateX(0%);
+    }
+  }
+</style>
+
+<script>
+  const menu = document.querySelector("#header__menu-btn");
+  const close = document.querySelector("#header__close-btn");
+
+  const bars = document.querySelector("#bars");
+  const xmark = document.querySelector("#xmark");
+  const headerItems = document.querySelector("#header__nav-items");
+  const visibility = headerItems?.getAttribute("data-visible");
+
+  menu?.addEventListener("click", () => {
+    if (visibility === "true") {
+      headerItems?.setAttribute("data-visible", "false");
+
+      bars?.setAttribute("style", "display: inline");
+      xmark?.setAttribute("style", "display: none");
+    } else {
+      headerItems?.setAttribute("data-visible", "true");
+      xmark?.setAttribute("style", "display: inline");
+      bars?.setAttribute("style", "display: none");
+    }
+
+    // console.log("bars", bars?.getAttribute("style"));
+    // console.log("xmark", xmark?.getAttribute("style"));
+  });
+
+  close?.addEventListener("click", () => {
+    // console.log("visibility", visibility);
+    headerItems?.setAttribute("data-visible", "false");
+    xmark?.setAttribute("style", "display: none");
+    bars?.setAttribute("style", "display: inline");
+    // console.log("bars", bars?.getAttribute("style"));
+    // console.log("xmark", xmark?.getAttribute("style"));
+  });
+</script>

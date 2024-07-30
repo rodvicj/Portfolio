@@ -1,7 +1,7 @@
 export interface HeaderItem {
   name: string;
   link: string;
-  icon?: string; // Optional property for social links
+  class?: string; // Optional property for social links
   target?: string; // Optional property for target attribute
 }
 
@@ -11,13 +11,13 @@ export const Header: HeaderItem[] = [
   {
     name: "github",
     link: "http://www.github.com/rodvicj",
-    icon: "fa-brands fa-github text-2xl",
+    class: "text-2xl",
     target: "_blank",
   },
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/rodvicj",
-    icon: "fa-brands fa-linkedin text-2xl",
+    class: "text-2xl  md:-ml-6",
     target: "_blank",
   },
 ];
