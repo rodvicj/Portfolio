@@ -1,7 +1,11 @@
 ---
 import { Icon } from "astro-icon/components";
 
-import { Header, Section } from "@/astro-boilerplate-components/index";
+import {
+  Header,
+  HeaderSocials,
+  Section,
+} from "@/astro-boilerplate-components/index";
 ---
 
 <Section>
@@ -35,14 +39,24 @@ import { Header, Section } from "@/astro-boilerplate-components/index";
               target={header?.target}
               rel="noopener noreferrer"
             >
-              {header.name === "github" || header.name === "linkedin" ? (
-                <Icon class={header.class} name={header.name} />
-              ) : (
-                header.name
-              )}
+              {header.name}
             </a>
           </li>
         ))}
+        <div class="mt-6 flex gap-3 sm:m-0">
+          {HeaderSocials.map((social) => (
+            <li class="transition duration-200 hover:scale-125 focus:scale-125 md:my-0 md:mr-8">
+              <a
+                class="hover:text-sky-500 focus:text-sky-500"
+                href={social.link}
+                target={social?.target}
+                rel="noopener noreferrer"
+              >
+                <Icon class={social.class} name={social.name} />
+              </a>
+            </li>
+          ))}
+        </div>
       </ul>
     </nav>
   </header>

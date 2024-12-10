@@ -3,7 +3,7 @@ import { BlogGallery } from "./components/BlogGallery";
 import { FooterCopyright } from "./components/FooterCopyright";
 import { GradientText } from "./components/GradientText";
 import type { HeaderItem } from "./components/Header";
-import { Header } from "./components/Header";
+import { Header, HeaderSocials } from "./components/Header";
 import { HeroAvatar } from "./components/HeroAvatar";
 import { HeroSocial } from "./components/HeroSocial";
 import { Logo } from "./components/Logo";
@@ -39,6 +39,7 @@ export {
   GradientText,
   Header,
   HeaderItem,
+  HeaderSocials,
   HeroAvatar,
   HeroSocial,
   Logo,

@@ -8,6 +8,9 @@ export interface HeaderItem {
 export const Header: HeaderItem[] = [
   { name: "home", link: "/" },
   { name: "projects", link: "/projects" },
+];
+
+export const HeaderSocials: HeaderItem[] = [
   {
     name: "github",
     link: "http://www.github.com/rodvicj",
